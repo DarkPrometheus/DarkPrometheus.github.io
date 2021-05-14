@@ -1,0 +1,66 @@
+.Trabajos__container{
+    @extend .full;
+    display: flex;
+    flex-direction: column;
+}
+
+.Trabajos__header{
+    flex: 3;
+    background-color: gray;
+}
+
+.Trabajos__main{
+    flex: 17;
+    background-color: goldenrod;
+    display: flex;
+}
+
+.Trabajos__opciones{
+    @extend .flex-center;
+    justify-content: flex-start;
+    flex: 25;
+    background-color: thistle;
+    padding-top: 2rem;
+    flex-direction: column;
+}
+
+.Trabajos__opcion{
+    @extend .flex-center;
+    align-items: flex-start;
+
+    height: 3rem;
+    width: 80%;
+    margin: .5rem;
+    background-color: aquamarine;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+
+.Trabajos__desc{
+    display: flex;
+    flex-direction: column;
+    flex: 75;
+    background-color: yellowgreen;
+}
+
+.Trabajos__full{
+    flex: 2;
+    background-color: antiquewhite;
+    @extend .detalles;
+}
+
+.Trabajos__half{
+    flex: 1;
+    background-color: burlywood;
+    @extend .detalles;
+}
+
+.detalles{
+    width: 35%;
+    margin: 1rem;
+    margin-bottom: 0;
+}
+
+.Trabajos__half:last-child{
+    margin-bottom: 2rem;
+}
