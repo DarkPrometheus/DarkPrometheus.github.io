@@ -28,7 +28,7 @@ export const TrabajoDesktop = () => {
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos accusamus vero, illo beatae nostrum nulla minima quo officia aspernatur impedit fuga rerum commodi voluptatum, sequi fugiat, deserunt debitis odit. Tenetur.</p>
                 <div className="Trabajo__botones">
-                    <Link to="/">Mas detalles</Link>
+                    <Link to="/">Volver</Link>
                     <Link to="/">Proyecto en github</Link>
                 </div>
             </div>

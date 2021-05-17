@@ -9,6 +9,7 @@ export const AppRouter = () => {
         <Router>
             <div className="Routers">
                 <Switch>
+                    <Route exact path="/" component={Home} />
                     <Route exact path="/Home" component={Home} />
                     <Route exact path="/Portafolio" component={Portafolio} />
                     <Route exact path="/Portafolio/:seccion" component={Trabajos} />
