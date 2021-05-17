@@ -2,7 +2,7 @@
   "name": "portafolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://darkprometheus.github.io",
+  "homepage": "https://emmanuelfrias.com",
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.6",
@@ -27,7 +27,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeply": "npm run build && echo 'emmanuelfrias.com' > .build/CNAME",
+    "predeply": "npm run build && echo emmanuelfrias.com > .build/CNAME",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
