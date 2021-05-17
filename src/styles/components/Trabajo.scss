@@ -1,3 +1,6 @@
+$wtd: 35rem;
+$hgt: 15rem * $wtd / 25rem;
+
 .Trabajo__container{
     @extend .full;
     display: flex;
@@ -10,9 +13,79 @@
 }
 
 .Trabajo__main{
+    @extend .colum;
+    align-items: center;
     flex: 17;
     background-color: goldenrod;
-    display: flex;
+    padding-top: 2rem;
+    .Trabajo__top{
+        @extend .row;
+        width: 100%;
+        .Trabajo__imagenes{
+            flex: 1;
+            @extend .row;
+            align-items: flex-start;
+            margin-bottom: 2rem;
+            .Trabajo__pc{
+                @extend .flex-center;
+                width: $wtd;
+                height: $hgt;
+                img{
+                    padding: 1rem;
+                    width: 100%;
+                }
+                .Trabajo__monitor{
+                    width: 80%;
+                    height: 80%;
+                    background-color: black;
+                    border-radius: 1rem;
+                }
+                .Trabajo__base{
+                    width: 100px;
+                    height: 0px;
+            
+                    border-left: 25px solid transparent;
+                    border-right: 25px solid transparent;
+                    border-bottom: 50px solid gray;
+                }
+            }
+            .Trabajo__mobile{
+                img{
+                    width: 12.5rem;
+                    height: $hgt;
+                    background-color: black;
+                    padding: 1rem;
+                    border-radius: 1rem
+                }
+            }
+        }
+        .Trabajo__tecnologias{
+            @extend .flex-center;
+            justify-content: flex-start;
+            flex: 1;
+            h4{
+                font-size: 3.5rem;
+            }
+            ul{
+                padding: 2rem;
+                li{
+                    list-style: none;
+                    padding: .2rem;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    p{
+        margin-top: 5rem;
+        width: 80%;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .Trabajo__botones{
+        margin-top: 5rem;
+        @extend .botones;
+    }
 }
 
 .Trabajo__img{
@@ -20,20 +93,11 @@
     flex: 1;
     margin: 3rem;
     position: relative;
-}
-
-.Trabajo__img img{
-    object-fit: cover;
-    max-width: 100%;
-    max-height: 100%;
-    margin-bottom: 6rem;
-    border-radius: 1rem;
-}
-
-.Trabajo__img img:last-child{
-    position: absolute;
-    width: 92%;
-    height: 45%;
-    top: 6rem;
-    border-radius: 10px;
+    img:last-child{
+        position: absolute;
+        width: 92%;
+        height: 45%;
+        top: 6rem;
+        border-radius: 10px;
+    }
 }

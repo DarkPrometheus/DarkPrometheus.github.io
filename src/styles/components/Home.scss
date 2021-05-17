@@ -1,67 +1,193 @@
-.Home__container{
-    display: flex;
-    flex-direction: row;
+$flex1: 3;
+$flex2: 7;
+$radius: 2rem;
+
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=KoHo:wght@200&display=swap");
+
+$fontTitle1: 'Open Sans Condensed', sans-serif;
+$fontTitle2: 'Lato', sans-serif;
+$font1: 'Newsreader', serif;
+$font2: 'KoHo', sans-serif;
+$fontLink: 'Raleway', sans-serif;
+
+.Home{
     @extend .full;
+    @extend .colum;
+    padding-top: 3rem;
 }
 
-.Home__desktop{
-    flex: 2;
-    background: url("https://upload.wikimedia.org/wikipedia/commons/5/59/Basic_desktop_computer_system.svg");
-}
-
-.Home__web{
-    flex: 2;
-    background: url("https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_1280.jpg");
-}
-
-.Home__mobile{
-    flex: 2;
-    background: url("https://cdn.pixabay.com/photo/2020/07/09/17/46/mobile-phone-5388160_1280.jpg")
-}
-
-.Home__content{
-    font-size: 3.5rem;
-    color: white;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-h3{
-    @extend .flex-center;
-    justify-content: flex-start;
-    padding-top: 10rem;
-    height: 100%;
-    width: 100%;
-    background-color: rgba($color: #5c5c5c, $alpha: .8);
-    transition: .5s ease;
-}
-
-a:hover{
-    flex: 4;
-    & h3{
-        font-size: 7rem;
-        background-color: rgba($color: #5c5c5c, $alpha: 0);
+.Home__container{
+    @extend .row;
+    flex: 8;
+    hr{
+        width: 2px;
+        height: 98%;
     }
-    // Solucionar error que no aplica el siquiente estilo a las anclas de la derecha
-    + .Home__actual{
-        flex: 2;
-        & h3{
-            font-size: 3.5rem;
-            background-color: rgba($color: #5c5c5c, $alpha: .8);
+}
+
+.Home__links{
+    flex: 2;
+    .Home__link{
+        margin: 1rem;
+        padding: 1rem;
+        font-size: 1.2rem;
+        display: flex;
+        flex-direction: row;
+        background-color: black;
+        font-family: $fontLink;
+        text-transform: uppercase;
+        border-radius: 0 $radius $radius 0;
+        hr{
+            margin-right: 1rem;
+            height: 22px;
+        }
+        a{
+            text-decoration: none;
+            color: wheat;
+            width: 100%;
+        }
+        border-style: inset;
+        &:hover{
+            border-style: outset;
         }
     }
 }
 
-.Home__actual{
-    flex: 4;
-    & h3{
-        font-size: 7rem;
-        background-color: rgba($color: #5c5c5c, $alpha: 0);
+.Home__contentMain{
+    @extend .colum;
+    flex: 8;
+    div{
+        .Title{
+            margin-left: 1rem;
+            font-size: 2rem;
+        }
+        .Title1{
+            @extend .flex-center;
+            flex-direction: row;
+            justify-content: flex-start;
+            flex: $flex1;
+            color: #b2aead;
+            img{
+                margin-right: 1rem;
+                width: 10%;
+            }
+        }
+        .Title2{
+            flex: $flex2;
+            color: #bfae8a;
+        }
+        .TitleOver{
+            font-family: $fontTitle1;
+            font-size: 2.4rem;
+        }
+        .TitleUnder{
+            font-family: $fontTitle2;
+        }
+    }
+    hr{
+        margin-left: 1%;
+        width: 98%;
+        height: 2px;
+    }
+    .Home__contentHeader{
+        @extend .title-container;
+        flex: 1;
+    }
+    .Home__contentTitles{
+        @extend .title-container;
+        flex: 1;
+    }
+    .Home__content{
+        @extend .row;
+        flex: 12;
+        .Home__contentAbout{
+            @extend .flex-center;
+            flex: $flex1;
+            background-color: #534e47;
+            margin: 1rem;
+            border-radius: $radius $radius 0 0;
+            img{
+                width: 75%;
+                border-radius: 50%;
+            }
+            h4{
+                margin-top: 1rem;
+                color: white;
+                font-size: 2rem;
+            }
+            ul{
+                width: 80%;
+                font-family: $font2;
+                li{
+                    @extend .text;
+                    margin-top: .5rem;
+                    b{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+        .Home__contentTrabajos{
+            @extend .colum;
+            flex: $flex2;
+            background-color: #282625;
+            margin: 1rem;
+            border-radius: $radius - .5rem;
+            .Home__Trabajo{
+                @extend .flex-center;
+                @extend .row;
+                flex: 1;
+                margin: 1rem;
+                background-color: #1f1e1d;
+                border: #515151 2px solid;
+                border-radius: $radius $radius 0 0;
+                img{
+                    width: 20%;
+                    height: 80%;
+                    margin-left: 2rem;
+                }
+                p{
+                    @extend .text;
+                    margin-left: 2rem;
+                    margin-right: 2rem;
+                }
+            }
+            .Trabajo{
+                @extend .flex-center;
+                flex-direction: row;
+            }
+            .Home__Trabajo:hover{
+                background-color: #242424;
+            }
+            .Trabajo1{
+                border-radius: $radius $radius 0 0;
+
+            }
+            .Trabajo2{
+                border-radius: 0 0 0 0;
+                
+            }
+            .Trabajo3{
+                border-radius: 0 0 $radius $radius;
+                
+            }
+        }
     }
 }
 
-a {
-    text-decoration: none;
+.title-container{
+    @extend .flex-center;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.text{
+    text-align: justify;
+    font-family: $font1;
+    font-size: 1.2rem;
+    color: white;
 }

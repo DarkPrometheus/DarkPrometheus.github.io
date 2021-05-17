@@ -4,55 +4,68 @@
     flex-direction: column;
 }
 
-.Trabajos__header{
-    flex: 3;
-    background-color: gray;
-}
-
 .Trabajos__main{
     flex: 17;
-    background-color: goldenrod;
     display: flex;
+    background-color: goldenrod;
+    hr{
+        margin-top: 2%;
+        height: 92%
+    }
 }
 
 .Trabajos__opciones{
     @extend .flex-center;
     justify-content: flex-start;
     flex: 25;
-    background-color: thistle;
     padding-top: 2rem;
     flex-direction: column;
 }
 
 .Trabajos__opcion{
     @extend .flex-center;
-    align-items: flex-start;
-
     height: 3rem;
     width: 80%;
+    align-items: flex-start;
+    background-color: black;
+    color: wheat;
     margin: .5rem;
-    background-color: aquamarine;
-    font-size: 1.5rem;
     padding-left: 1rem;
+    font-size: 1.5rem;
+    border-radius: 0 1rem 3rem 0;
+    border-style: inset;
+    &:hover{
+        border-style: outset;
+    }
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+$font: 'Rubik', sans-serif;
 .Trabajos__desc{
-    display: flex;
-    flex-direction: column;
+    @extend .flex-center;
+    justify-content: flex-start;
     flex: 75;
-    background-color: yellowgreen;
-}
-
-.Trabajos__full{
-    flex: 2;
-    background-color: antiquewhite;
-    @extend .detalles;
-}
-
-.Trabajos__half{
-    flex: 1;
-    background-color: burlywood;
-    @extend .detalles;
+    h2{
+        margin: 1rem;
+        font-family: $font;
+        text-transform: uppercase;
+        font-size: 5rem;
+    }
+    img{
+        width: 60%;
+        height: 50%;
+        border-radius: .5rem;
+    }
+    p{
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        width: 80%;
+        font-size: 1.2rem;
+        text-align: center
+    }
+    div{
+        @extend .botones;
+    }
 }
 
 .detalles{

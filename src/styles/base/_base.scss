@@ -62,3 +62,35 @@ html, body{
     width: 100vw;
     height: 100vh;
 }
+
+.colum{
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.botones{
+    @extend .flex-center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+    height: 5rem;
+    a{
+        width: 12rem;
+        text-decoration: none;
+        text-align: center;
+        background-color: black;
+        color: wheat;
+        border-radius: 2rem;
+        padding: 1.5rem;
+        border-style: inset;
+        &:hover{
+            max-width: 12rem;
+            border-style: outset;
+        }
+    }
+}

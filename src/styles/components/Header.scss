@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&display=swap");
+
+$font:'Fira Sans', sans-serif;
+$alto: 6rem;
+
+.Header{
+    @extend .flex-center;
+    height: $alto;
+    background-color: black;
+    ul{
+        @extend .row;
+        @extend .flex-center;
+        justify-content: space-around;
+        width: 100%;
+        height: $alto;
+        a{
+            background-color: black;
+            color: wheat;
+            text-decoration: none;
+            padding: 1.2rem;
+            width: 10rem;
+            text-align: center;
+            border-radius: 0 0 1rem 1rem;
+            list-style: none;
+            font-family: $font;
+            font-size: 1.5rem;
+            margin: .5rem;
+            border-style: inset;
+            &:hover{
+                border-style: outset;
+                max-width: 10rem;
+            }
+        }
+    }
+}

@@ -1,31 +1,71 @@
-import React from 'react'
+import { useParams } from 'react-router';
 import { Header } from './Header';
+import { TrabajosPortafolio } from "../data/Trabajos"
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+
+interface RouteParams {
+    seccion: string;
+}
+
+interface trabajos {
+    id: string;
+    posicion: number;
+    nombre: string;
+    img: string;
+    des: string;
+    github: string;
+}
 
 export const Trabajos = () => {
+    const { seccion } = useParams<RouteParams>();
+    let trabajos: trabajos[];
+    console.log(TrabajosPortafolio[0].trabajos)
+
+
+    switch (seccion) {
+        case "Web":
+            trabajos = TrabajosPortafolio[0].trabajos;
+            break;
+        case "Desktop":
+            trabajos = TrabajosPortafolio[1].trabajos;
+            break;
+        case "Mobile":
+            trabajos = TrabajosPortafolio[2].trabajos;
+            break;
+        default:
+            trabajos = [];
+            break;
+    }
+    const [Actual, setActual] = useState<trabajos>(trabajos[0])
+
+    const CambiarTrabajo = (trabajo: number) => {
+        setActual(trabajos[trabajo])
+    }
+
     return (
         <div className="Trabajos__container">
             <Header />
             <div className="Trabajos__main">
                 <div className="Trabajos__opciones">
-                    <div className="Trabajos__opcion">Krieg / MAC</div>
-                    <div className="Trabajos__opcion">Krieg / MAC</div>
-                    <div className="Trabajos__opcion">Krieg / MAC</div>
-                    <div className="Trabajos__opcion">Krieg / MAC</div>
-                    <div className="Trabajos__opcion">Krieg / MAC</div>
-                    <div className="Trabajos__opcion">Krieg / MAC</div>
-                    <div className="Trabajos__opcion">Krieg / MAC</div>
-                    <div className="Trabajos__opcion">Krieg / MAC</div>
-                    <div className="Trabajos__opcion">Krieg / MAC</div>
-                    <div className="Trabajos__opcion">Krieg / MAC</div>
+                    {
+                        trabajos.map(item => {
+                            return <div onClick={() => CambiarTrabajo(item.posicion)} className="Trabajos__opcion">{item.nombre}</div>
+                        })
+                    }
                 </div>
+                <hr />
                 <div className="Trabajos__desc">
-                    <div className="Trabajos__full"></div>
-                    <div className="Trabajos__full"></div>
-                    <div className="Trabajos__half"></div>
-                    <div className="Trabajos__half"></div>
-                    <div className="Trabajos__half"></div>
+                    <h2>{Actual.nombre}</h2>
+                    <img src={Actual.img} alt="" />
+                    <p>{Actual.des}</p>
+                    <div>
+                        <Link to={seccion + "/" + Actual.id}>Mas detalles</Link>
+                        <a href={Actual.github}>Proyecto en github</a>
+                    </div>
                 </div>
             </div>
         </div>
     )
 }
+
