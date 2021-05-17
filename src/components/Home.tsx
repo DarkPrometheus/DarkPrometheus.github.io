@@ -44,24 +44,24 @@ export const Home = () => {
                             </ul>
                         </div>
                         <div className="Home__contentTrabajos">
-                            <a className="Home__Trabajo Trabajo1" href="#">
+                            <Link className="Home__Trabajo Trabajo1" to="#">
                                 <div className="Trabajo">
                                     <img src="https://fondosmil.com/fondo/11756.jpg" alt="" />
                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente voluptatem debitis porro expedita dolore doloremque, consequatur itaque deleniti excepturi totam pariatur cum, officia esse fugiat, recusandae accusantium. Enim, veritatis id!</p>
                                 </div>
-                            </a>
-                            <a className="Home__Trabajo Trabajo2" href="#">
+                            </Link>
+                            <Link className="Home__Trabajo Trabajo2" to="#">
                                 <div className="Trabajo">
                                     <img src="https://fondosmil.com/fondo/11756.jpg" alt="" />
                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente voluptatem debitis porro expedita dolore doloremque, consequatur itaque deleniti excepturi totam pariatur cum, officia esse fugiat, recusandae accusantium. Enim, veritatis id!</p>
                                 </div>
-                            </a>
-                            <a className="Home__Trabajo Trabajo3" href="#">
+                            </Link>
+                            <Link className="Home__Trabajo Trabajo3" to="#">
                                 <div className="Trabajo">
                                     <img src="https://fondosmil.com/fondo/11756.jpg" alt="" />
                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente voluptatem debitis porro expedita dolore doloremque, consequatur itaque deleniti excepturi totam pariatur cum, officia esse fugiat, recusandae accusantium. Enim, veritatis id!</p>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

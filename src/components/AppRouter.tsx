@@ -1,8 +1,10 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Home } from './Home';
 import { Portafolio } from './Portafolio';
-import { TrabajoDesktop } from './TrabajoDesktop';
+import { TrabajosWeb } from './TrabajosWeb';
 import { Trabajos } from './Trabajos';
+import { TrabajosEscritorio } from './TrabajosEscritorio';
+import { TrabajosMovil } from './TrabajosMovil';
 
 export const AppRouter = () => {
     return (
@@ -15,9 +17,9 @@ export const AppRouter = () => {
                     <Route exact path="/Portafolio/:seccion" component={Trabajos} />
                     <Route exact path="/Portafolio/:seccion" component={Trabajos} />
                     <Route exact path="/Portafolio/:seccion" component={Trabajos} />
-                    <Route exact path="/Portafolio/Desktop/:trabajo" component={TrabajoDesktop} />
-                    <Route exact path="/Portafolio/Web/:trabajo" component={TrabajoDesktop} />
-                    <Route exact path="/Portafolio/Mobile/:trabajo" component={TrabajoDesktop} />
+                    <Route exact path="/Portafolio/Desktop/:trabajo" component={TrabajosEscritorio} />
+                    <Route exact path="/Portafolio/Web/:trabajo" component={TrabajosWeb} />
+                    <Route exact path="/Portafolio/Mobile/:trabajo" component={TrabajosMovil} />
                 </Switch>
             </div>
         </Router>

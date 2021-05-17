@@ -3,7 +3,7 @@ export const TrabajosPortafolio = [
         id: "Web",
         trabajos: [
             {
-                id: "JuegoDeTribias",
+                id: "JuegoDeTrivias",
                 posicion: 0,
                 nombre: "Juego de trivias",
                 img: "https://fondosmil.com/fondo/11756.jpg",
@@ -13,7 +13,7 @@ export const TrabajosPortafolio = [
             {
                 id: "GifExpertApp",
                 posicion: 1,
-                nombre: "GifExpertApp",
+                nombre: "Gif expert app",
                 img: "https://fondosmil.com/fondo/11756.jpg",
                 des: "Pagina web hecha en React la cual a través de una api se conecta a los servicios de Giphy para mostrar gifs relacionados a tu búsqueda",
                 github: "https://github.com/DarkPrometheus/GifExpertApp"
@@ -26,18 +26,18 @@ export const TrabajosPortafolio = [
             {
                 id: "MessagesFinder",
                 posicion: 0,
-                nombre: "MessagesFinder",
+                nombre: "Messages Finder",
                 img: "https://fondosmil.com/fondo/11756.jpg",
                 des: "Programa escrito en c# para analizar y ver tus mensajes de Facebook Messenger a partir de la copia de la información que te permite descargar Facebook",
-                github: "https://github.com/DarkPrometheus/MessagesFinder"
+                github: "https://github.com/DarkPrometheus/MessagesFinder",
             },
             {
-                id: "EjerciciosEnC#",
+                id: "EjerciciosEnCSharp",
                 posicion: 1,
                 nombre: "Ejercicios en C#",
                 img: "https://fondosmil.com/fondo/11756.jpg",
                 des: "Ejercicios varios de programación en C#",
-                github: "https://github.com/DarkPrometheus/Ejercicios"
+                github: "https://github.com/DarkPrometheus/Ejercicios",
             },
         ]
     },
@@ -45,12 +45,12 @@ export const TrabajosPortafolio = [
         id: "Mobile",
         trabajos: [
             {
-                id: "",
+                id: "Calculadora",
                 posicion: 0,
-                nombre: "En progreso...",
+                nombre: "Calculadora IOS",
                 img: "https://fondosmil.com/fondo/11756.jpg",
-                des: "Aun no tengo trabajos en React native, pero estan en camino",
-                github: "https://github.com/DarkPrometheus"
+                des: "Clon de la calculadora de IOS",
+                github: "https://github.com/DarkPrometheus",
             },
         ]
     },

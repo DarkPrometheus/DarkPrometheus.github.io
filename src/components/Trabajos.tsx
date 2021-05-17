@@ -20,8 +20,6 @@ interface trabajos {
 export const Trabajos = () => {
     const { seccion } = useParams<RouteParams>();
     let trabajos: trabajos[];
-    console.log(TrabajosPortafolio[0].trabajos)
-
 
     switch (seccion) {
         case "Web":
@@ -40,6 +38,7 @@ export const Trabajos = () => {
     const [Actual, setActual] = useState<trabajos>(trabajos[0])
 
     const CambiarTrabajo = (trabajo: number) => {
+        console.log(Actual)
         setActual(trabajos[trabajo])
     }
 
@@ -50,7 +49,7 @@ export const Trabajos = () => {
                 <div className="Trabajos__opciones">
                     {
                         trabajos.map(item => {
-                            return <div onClick={() => CambiarTrabajo(item.posicion)} className="Trabajos__opcion">{item.nombre}</div>
+                            return <div key={item.id} onClick={() => CambiarTrabajo(item.posicion)} className="Trabajos__opcion">{item.nombre}</div>
                         })
                     }
                 </div>

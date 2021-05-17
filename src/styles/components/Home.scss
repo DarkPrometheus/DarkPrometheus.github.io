@@ -18,6 +18,7 @@ $fontLink: 'Raleway', sans-serif;
     @extend .full;
     @extend .colum;
     padding-top: 3rem;
+    background-color: black;
 }
 
 .Home__container{
@@ -107,9 +108,10 @@ $fontLink: 'Raleway', sans-serif;
         .Home__contentAbout{
             @extend .flex-center;
             flex: $flex1;
-            background-color: #534e47;
+            background-color: #1f1e1d;
             margin: 1rem;
             border-radius: $radius $radius 0 0;
+            border-style: inset;
             img{
                 width: 75%;
                 border-radius: 50%;
@@ -134,7 +136,7 @@ $fontLink: 'Raleway', sans-serif;
         .Home__contentTrabajos{
             @extend .colum;
             flex: $flex2;
-            background-color: #282625;
+            // background-color: #282625;
             margin: 1rem;
             border-radius: $radius - .5rem;
             .Home__Trabajo{
