@@ -4,5 +4,9 @@
 @import "./components/Portafolio.scss";
 @import "./components/Trabajos.scss";
 @import "./components/Trabajo.scss";
-@import "./components/Home.scss";
+// @import "./components/Home.scss";
 @import "./components/Header.scss";
+
+// Responsive
+@import "./components/responsive/mobile/Home.scss";
+@import "./components/responsive/tablet/Home.scss";

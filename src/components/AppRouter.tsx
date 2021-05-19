@@ -11,15 +11,15 @@ export const AppRouter = () => {
         <Router>
             <div className="Routers">
                 <Switch>
-                    <Route exact path="/" component={Home} />
-                    <Route exact path="/Home" component={Home} />
-                    <Route exact path="/Portafolio" component={Portafolio} />
-                    <Route exact path="/Portafolio/:seccion" component={Trabajos} />
-                    <Route exact path="/Portafolio/:seccion" component={Trabajos} />
-                    <Route exact path="/Portafolio/:seccion" component={Trabajos} />
-                    <Route exact path="/Portafolio/Desktop/:trabajo" component={TrabajosEscritorio} />
-                    <Route exact path="/Portafolio/Web/:trabajo" component={TrabajosWeb} />
-                    <Route exact path="/Portafolio/Mobile/:trabajo" component={TrabajosMovil} />
+                    <Route path="/Home" component={Home} />
+                    <Route path="/Portafolio/Desktop/:trabajo" component={TrabajosEscritorio} />
+                    <Route path="/Portafolio/Web/:trabajo" component={TrabajosWeb} />
+                    <Route path="/Portafolio/Mobile/:trabajo" component={TrabajosMovil} />
+                    <Route path="/Portafolio/:seccion" component={Trabajos} />
+                    <Route path="/Portafolio/:seccion" component={Trabajos} />
+                    <Route path="/Portafolio/:seccion" component={Trabajos} />
+                    <Route path="/Portafolio" component={Portafolio} />
+                    <Route path="/" component={Home} />
                 </Switch>
             </div>
         </Router>
