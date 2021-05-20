@@ -24,6 +24,9 @@
                     .Title{
                         font-size: 3.5rem;
                     }
+                    p{
+                        margin: 0 3rem 2rem 3rem;
+                    }
                     ul{
                         li{
                             font-size: 1.2rem;
@@ -62,6 +65,9 @@
                             font-size: 1.3rem;
                         }
                     }
+                    p{
+                        font-size: 1.3rem;
+                    }
                 }
                 .Home__content{
                     .Title{
@@ -82,58 +88,58 @@
     }
 }
 
-@media (min-width: 1024px){
-    .Home{
-        .Home__container{
-            .Home__links{
-                .Home__link{
-                    a{
-                        font-size: 3.6rem;
-                    }
-                }
-            }
-            .Home__contentMain{
-                .Home__contentHeader{
-                    margin: 4rem 0;
-                    .Title{
-                        font-size: 3.6rem;
-                    }
-                    .Title1{
-                        img{
-                            margin-right: 1rem;
-                            width: 4.5rem;
-                        }
-                    }
-                }
-                .Home__contentAbout{
-                    padding: 5rem 0;
-                    .Title{
-                        font-size: 7rem;
-                    }
-                    ul{
-                        li{
-                            font-size: 2rem;
-                        }
-                    }
-                }
-                .Home__content{
-                    padding: 4rem 0 0 0;
-                    .Title{
-                        font-size: 4rem;
-                        padding-bottom: 2rem;
-                    }
-                    .Home__contentTrabajos{
-                        .Home__Trabajo{
-                            .Trabajo{
-                                p{
-                                    font-size: 2.5rem;
-                                    padding-bottom: 4rem;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+// @media (min-width: 1024px){
+//     .Home{
+//         .Home__container{
+//             .Home__links{
+//                 .Home__link{
+//                     a{
+//                         font-size: 3.6rem;
+//                     }
+//                 }
+//             }
+//             .Home__contentMain{
+//                 .Home__contentHeader{
+//                     margin: 4rem 0;
+//                     .Title{
+//                         font-size: 3.6rem;
+//                     }
+//                     .Title1{
+//                         img{
+//                             margin-right: 1rem;
+//                             width: 4.5rem;
+//                         }
+//                     }
+//                 }
+//                 .Home__contentAbout{
+//                     padding: 5rem 0;
+//                     .Title{
+//                         font-size: 7rem;
+//                     }
+//                     ul{
+//                         li{
+//                             font-size: 2rem;
+//                         }
+//                     }
+//                 }
+//                 .Home__content{
+//                     padding: 4rem 0 0 0;
+//                     .Title{
+//                         font-size: 4rem;
+//                         padding-bottom: 2rem;
+//                     }
+//                     .Home__contentTrabajos{
+//                         .Home__Trabajo{
+//                             .Trabajo{
+//                                 p{
+//                                     font-size: 2.5rem;
+//                                     padding-bottom: 4rem;
+//                                 }
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }

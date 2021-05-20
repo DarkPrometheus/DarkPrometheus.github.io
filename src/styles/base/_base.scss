@@ -12,23 +12,6 @@ html, body{
 }
 
 @mixin Styles {
-    .flex-center{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .flex-justify{
-        display: flex;
-        justify-content: center;
-    }
-
-    .flex-aling{
-        display: flex;
-        align-items: center;
-    }
-
     .title{
         font-size: 5rem;
         color: white;
@@ -56,43 +39,6 @@ html, body{
         &:hover{
             color: darken($color: white, $amount: .1);
             text-shadow: 1px 1px;
-        }
-    }
-
-    .full{
-        width: 100vw;
-        height: 100vh;
-    }
-
-    .colum{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .row{
-        display: flex;
-        flex-direction: row;
-    }
-
-    .botones{
-        @extend .flex-center;
-        justify-content: space-evenly;
-        flex-direction: row;
-        width: 100%;
-        height: 5rem;
-        a{
-            width: 12rem;
-            text-decoration: none;
-            text-align: center;
-            background-color: black;
-            color: wheat;
-            border-radius: 2rem;
-            padding: 1.5rem;
-            border-style: inset;
-            &:hover{
-                max-width: 12rem;
-                border-style: outset;
-            }
         }
     }
 }

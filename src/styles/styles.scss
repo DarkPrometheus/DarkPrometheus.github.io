@@ -1,5 +1,6 @@
 @import "./base/settings";
 @import "./base/base";
+@import "./mixins/mixins";
 
 @import "./components/Portafolio.scss";
 @import "./components/Trabajos.scss";
@@ -8,5 +9,6 @@
 @import "./components/Header.scss";
 
 // Responsive
-@import "./components/responsive/mobile/Home.scss";
-@import "./components/responsive/tablet/Home.scss";
+@import "./components/mobile/Home.scss";
+@import "./components/tablet/Home.scss";
+@import "./components/desktop/Home.scss";

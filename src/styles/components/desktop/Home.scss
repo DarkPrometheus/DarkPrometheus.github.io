@@ -1,0 +1,209 @@
+$radius: 2rem;
+
+@media (min-width: 1024px){
+    .Home{
+        .Home__container{
+            display: flex;
+            flex-direction: column;
+            .Home__links{
+                padding: 0 0 1rem 0;
+                @include row;
+                justify-content: space-around;
+                .Home__link{
+                    @include boton;;
+                    flex-direction: row;
+                    border-radius: 0 0 2rem 2rem;
+                    hr{
+                        display: none;
+                    }
+                    a{
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+            hr{
+
+            }
+            .Home__contentMain{
+                .Home__contentHeader{
+                    @include center;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    margin: 1.5rem 0;
+                    .Title{
+                        font-size: 1.5rem;
+                    }
+                    .Title1{
+                        img{
+                            width: 2rem;
+                        }
+                    }
+                    .Title2{
+                        margin: 0;
+                        width: fit-content;
+                        @include center;
+                    }
+                }
+                hr{
+
+                }
+                .Home__contentContainer{
+                    @include row;
+                    .Home__contentAbout{
+                        padding: 1rem 0;
+                        flex: 3;
+                        justify-content: flex-start;
+                        .Title{
+                            font-size: 2rem;
+                            &:first-child{
+                                font-size: 2.6rem;
+                            }
+                        }
+                        img{
+                            width: 50%;
+                            margin: 1rem 0;
+                        }
+                        p{
+                            font-size: 1rem;
+                        }
+                        ul{
+                            li{
+                                font-size: 1rem;
+                            }
+                            margin: 0 0 1rem 0;
+                        }
+                    }
+                    hr{
+                        
+                    }
+                    .Home__content{
+                        padding: 1rem 0;
+                        justify-content: flex-start;
+                        flex: 7;
+                        .Title{
+                            margin: 0 0 1rem 0;
+                        }
+                        .Home__contentTrabajos{                            
+                            @include center;
+                            .Home__Trabajo{
+                                width: 80%;
+                                margin: 1rem;
+                                .Trabajo{
+                                    @include center;
+                                    flex-direction: row;
+                                    border: #515151 2px solid;
+                                    background-color: #1f1e1d;
+                                    padding: 1.8rem;
+                                    img{
+                                        width: 20%;
+                                    }
+                                    p{
+                                        font-size: 1rem;
+                                        padding: 0 0 0 2rem;
+                                    }
+                                }
+                                .Trabajo1{
+                                    border-radius: $radius $radius 0 0;
+                                }
+                                .Trabajo2{
+                                    margin: 4rem 0 4rem 0;
+                                }
+                                .Trabajo3{
+                                    border-radius: 0 0 $radius $radius;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1800px){
+    .Home{
+        .Home__container{
+            .Home__links{
+                .Home__link{
+                    hr{
+
+                    }
+                    a{
+                        font-size: 2rem;
+                    }
+                }
+            }
+            hr{
+
+            }
+            .Home__contentMain{
+                .Home__contentHeader{
+                    .Title{
+                        font-size: 2.5rem;
+                    }
+                    .Title1{
+                        img{
+
+                        }
+                    }
+                    .Title2{
+
+                    }
+                }
+                hr{
+
+                }
+                .Home__contentContainer{
+                    .Home__contentAbout{
+                        .Title{
+                            font-size: 3.5rem;
+                            &:first-child{
+                                font-size: 3.5rem;
+                            }
+                        }
+                        img{
+
+                        }
+                        p{
+                            font-size: 1.2rem;
+                        }
+                        ul{
+                            li{
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+                    hr{
+                        
+                    }
+                    .Home__content{
+                        .Title{
+                            font-size: 3.5rem;
+                        }
+                        .Home__contentTrabajos{                            
+                            .Home__Trabajo{
+                                .Trabajo{
+                                    img{
+                                        
+                                    }
+                                    p{
+                                        font-size: 1.5rem;
+                                    }
+                                }
+                                .Trabajo1{
+                                    
+                                }
+                                .Trabajo2{
+
+                                }
+                                .Trabajo3{
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

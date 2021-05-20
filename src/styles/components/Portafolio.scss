@@ -1,7 +1,7 @@
 .Portafolio__container{
     display: flex;
     flex-direction: row;
-    @extend .full;
+    @include fullv;
 }
 
 .Portafolio__desktop{
@@ -27,7 +27,7 @@
     background-position: center;
     background-attachment: fixed;
     h3{
-        @extend .flex-center;
+        @include center;
         justify-content: flex-start;
         padding-top: 10rem;
         height: 100%;

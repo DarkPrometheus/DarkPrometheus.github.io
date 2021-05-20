@@ -1,3 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=KoHo:wght@200&display=swap");
+
+$font1: 'Newsreader', serif;
+$font2: 'KoHo', sans-serif;
+$fontTitle2: 'Lato', sans-serif;
+$fontTitle1: 'Raleway', sans-serif;
+
 @media (min-width: 320px){
     @include Styles;
     .Home{
@@ -11,6 +22,7 @@
                     display: flex;
                     flex-direction: column-reverse;
                     padding: 1rem;
+                    font-family: $fontTitle1;
                     hr{
                         margin: .5rem 0 0 0;
                     }
@@ -25,7 +37,8 @@
                     margin: 2rem 0;
                     color: #b2aead;
                     .Title{
-                        @extend .flex-center;
+                        font-family: $fontTitle1;
+                        @include center;
                         flex-direction: row;
                         justify-content: flex-start;
                         font-size: 1.5rem;
@@ -46,34 +59,45 @@
                 .Home__contentAbout{
                     padding: 2rem 0;
                     background-color: #1f1e1d;
-                    @extend .flex-center;
+                    @include center;
                     .Title{
                         color: wheat;
                         font-size: 2.3rem;
+                        font-family: $fontTitle2;
                     }
                     img{
                         width: 80%;
                         border-radius: 50%;
                         margin: 2rem 0;
                     }
+                    p{
+                        margin: 0 2rem 2rem 2rem;
+                        text-align: justify;
+                        font-family: $font2;
+                    }
                     ul{
                         li{
-                            margin: 1rem;
+                            font-family: $font2;
+                            margin: .5rem;
                             text-align: center;
                             list-style: none;
                             &:last-child{
                                 margin-bottom: 0;
                             }
+                            b{
+                                font-family: $font2;
+                            }
                         }
                     }
                 }
                 .Home__content{
-                    @extend .flex-center;
+                    @include center;
                     padding: 2rem 0 0 0;
                     .Title{
                         color: #b2aead;
                         font-size: 1.5rem;
                         margin: 0 0 2rem 0;
+                        font-family: $fontTitle2;
                     }
                     .Home__contentTrabajos{
                         .Home__Trabajo{
@@ -86,6 +110,7 @@
                                     padding: 1rem 1rem 2rem 1rem;
                                     text-align: justify;
                                     color: whitesmoke;
+                                    font-family: $font1;
                                 }
                             }
                             .Trabao1{

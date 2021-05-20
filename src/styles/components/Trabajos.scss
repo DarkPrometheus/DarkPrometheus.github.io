@@ -1,5 +1,5 @@
 .Trabajos__container{
-    @extend .full;
+    @include full;
     display: flex;
     flex-direction: column;
 }
@@ -15,7 +15,7 @@
 }
 
 .Trabajos__opciones{
-    @extend .flex-center;
+    @include center;
     justify-content: flex-start;
     flex: 25;
     padding-top: 2rem;
@@ -23,7 +23,7 @@
 }
 
 .Trabajos__opcion{
-    @extend .flex-center;
+    @include center;
     height: 3rem;
     width: 80%;
     align-items: flex-start;
@@ -42,7 +42,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
 $font: 'Rubik', sans-serif;
 .Trabajos__desc{
-    @extend .flex-center;
+    @include center;
     justify-content: flex-start;
     flex: 75;
     h2{
@@ -64,7 +64,7 @@ $font: 'Rubik', sans-serif;
         text-align: center
     }
     div{
-        @extend .botones;
+        @include botones;
     }
 }
 

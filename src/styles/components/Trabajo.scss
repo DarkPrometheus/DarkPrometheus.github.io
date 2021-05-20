@@ -2,7 +2,7 @@ $wtd: 35rem;
 $hgt: 15rem * $wtd / 25rem;
 
 .Trabajo__container{
-    @extend .full;
+    @include fullv;
     display: flex;
     flex-direction: column;
 }
@@ -13,21 +13,21 @@ $hgt: 15rem * $wtd / 25rem;
 }
 
 .Trabajo__main{
-    @extend .colum;
+    @include colum;
     align-items: center;
     flex: 17;
     background-color: goldenrod;
     padding-top: 1rem;
     .Trabajo__top{
-        @extend .row;
+        @include row;
         width: 100%;
         .Trabajo__imagenes{
             flex: 1;
-            @extend .row;
+            @include row;
             align-items: flex-start;
             margin-bottom: 2rem;
             .Trabajo__pc{
-                @extend .flex-center;
+                @include center;
                 width: $wtd;
                 height: $hgt;
                 img{
@@ -63,7 +63,7 @@ $hgt: 15rem * $wtd / 25rem;
             justify-content: center
         }
         .Trabajo__tecnologias{
-            @extend .flex-center;
+            @include center;
             justify-content: flex-start;
             flex: 1;
             h4{
@@ -92,12 +92,12 @@ $hgt: 15rem * $wtd / 25rem;
     }
     .Trabajo__botones{
         margin-top: 5rem;
-        @extend .botones;
+        @include botones;
     }
 }
 
 .Trabajo__img{
-    @extend .flex-center;
+    @include center;
     flex: 1;
     margin: 3rem;
     position: relative;

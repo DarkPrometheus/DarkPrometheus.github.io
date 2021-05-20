@@ -4,12 +4,12 @@ $font:'Fira Sans', sans-serif;
 $alto: 6rem;
 
 .Header{
-    @extend .flex-center;
+    @include center;
     height: $alto;
     background-color: black;
     ul{
-        @extend .row;
-        @extend .flex-center;
+        @include row;
+        @include center;
         justify-content: space-around;
         width: 100%;
         height: $alto;
