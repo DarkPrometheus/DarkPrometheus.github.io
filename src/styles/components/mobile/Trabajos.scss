@@ -1,0 +1,83 @@
+@media (min-width: 320px){
+    @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+    $font: 'Rubik', sans-serif;
+
+    .Trabajos__container{
+        @include fullv;
+        display: flex;
+        flex-direction: column;
+        .Trabajos__main{
+            @include column;
+            height: 100%;
+            background-color: goldenrod;
+            hr{
+                margin-top: 2%;
+                height: 2px;
+            }
+            .Trabajos__opciones{
+                @include center;
+                justify-content: flex-start;
+                flex-direction: column;
+                .Trabajos__opcion{
+                    @include center;
+                    height: 3rem;
+                    width: 80%;
+                    align-items: flex-start;
+                    background-color: black;
+                    color: wheat;
+                    margin: .5rem;
+                    padding-left: 1rem;
+                    font-size: 1.5rem;
+                    border-radius: 0 1rem 3rem 0;
+                    border-style: inset;
+                    &:hover{
+                        border-style: outset;
+                    }
+                }
+            }
+            .Trabajos__desc{
+                @include center;
+                justify-content: flex-start;
+                h2{
+                    text-align: center;
+                    margin: 1rem;
+                    font-family: $font;
+                    text-transform: uppercase;
+                    font-size: 3rem;
+                }
+                img{
+                    width: 95%;
+                    height: 50%;
+                    border-radius: .5rem;
+                }
+                p{
+                    margin-top: 2rem;
+                    margin-bottom: 1rem;
+                    width: 80%;
+                    font-size: 1.2rem;
+                    text-align: center
+                }
+                div{
+                    @include botones;
+                    @include column;
+                    height: fit-content;
+                    a{
+                        width: 80%;
+                        margin: 1rem;
+                        padding: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    
+    .detalles{
+        width: 35%;
+        margin: 1rem;
+        margin-bottom: 0;
+    }
+    
+    .Trabajos__half:last-child{
+        margin-bottom: 2rem;
+    }
+}

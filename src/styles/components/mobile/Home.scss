@@ -17,20 +17,28 @@ $fontTitle1: 'Raleway', sans-serif;
         color: white;
         .Home__container{
             .Home__links{
-                padding: 2rem 0;
-                .Home__link{
-                    display: flex;
-                    flex-direction: column-reverse;
-                    padding: 1rem;
-                    font-family: $fontTitle1;
-                    hr{
-                        margin: .5rem 0 0 0;
-                    }
-                    a{
-                        font-size: 1.8rem;
-                        color: wheat;
+                @include column;
+                align-items: flex-end;
+                div{
+                    width: 100%;
+                    .Home__link{
+                        display: flex;
+                        flex-direction: column-reverse;
+                        padding: 1rem;
+                        font-family: $fontTitle1;
+                        hr{
+                            margin: .5rem 0 0 0;
+                        }
+                        a{
+                            font-size: 1.8rem;
+                            color: wheat;
+                        }
                     }
                 }
+                .NoHide{
+                    display: block;
+                }
+                
             }
             .Home__contentMain{
                 .Home__contentHeader{

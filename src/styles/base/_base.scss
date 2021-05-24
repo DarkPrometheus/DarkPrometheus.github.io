@@ -5,10 +5,19 @@
     box-sizing: border-box;
 }
 
-html, body{
+body{
     height: 100vh;
-    width: $max-width;
+    width: 100vw;
     // overflow: hidden;
+}
+
+.MenuBoton{
+    margin: 1rem 1rem 1rem 0;
+    width: 3rem;
+    height: 3rem;
+}
+.Hide{
+    display: none;
 }
 
 @mixin Styles {

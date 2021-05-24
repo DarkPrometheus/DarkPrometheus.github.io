@@ -2,13 +2,21 @@
 @import "./base/base";
 @import "./mixins/mixins";
 
-@import "./components/Portafolio.scss";
-@import "./components/Trabajos.scss";
-@import "./components/Trabajo.scss";
-// @import "./components/Home.scss";
+// @import "./components/Trabajos.scss";
+// @import "./components/Trabajo.scss";
 @import "./components/Header.scss";
 
-// Responsive
+// Mobile
+@import "./components/mobile/NavBar.scss";
 @import "./components/mobile/Home.scss";
+@import "./components/mobile/Portafolio.scss";
+@import "./components/mobile/Trabajos.scss";
+@import "./components/mobile/Trabajo.scss";
+
+// Tablet
 @import "./components/tablet/Home.scss";
+
+// Desktop
+@import "./components/desktop/Portafolio.scss";
+@import "./components/desktop/NavBar.scss";
 @import "./components/desktop/Home.scss";

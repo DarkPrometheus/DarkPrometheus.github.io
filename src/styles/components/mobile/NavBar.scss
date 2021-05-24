@@ -1,0 +1,42 @@
+@media (min-width: 320px){
+    @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&display=swap");
+
+    $font:'Fira Sans', sans-serif;
+
+    .NavBar{
+        @include column;
+        align-items: flex-end;
+        height: fit-content;
+        background-color: black;
+        ul{
+            @include row;
+            @include center;
+            justify-content: space-around;
+            width: 100%;
+            margin: 0 0 1rem 0;
+            a{
+                background-color: black;
+                color: wheat;
+                text-decoration: none;
+                padding: .5rem;
+                width: 80%;
+                text-align: center;
+                border-radius: 0 0 1rem 1rem;
+                list-style: none;
+                font-family: $font;
+                font-size: 1.5rem;
+                margin: .5rem;
+                border-style: inset;
+                &:hover{
+                    border-style: outset;
+                }
+            }
+        }
+        .Hide{
+            display: none;
+        }
+        .NoHide{
+            display: flex;
+        }
+    }
+}

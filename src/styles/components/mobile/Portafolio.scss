@@ -1,0 +1,38 @@
+@media(min-width: 320px){
+    .Portafolio__container{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-color: rebeccapurple;
+        .Portafolio__desktop{
+            flex: 2;
+            background: url("https://upload.wikimedia.org/wikipedia/commons/5/59/Basic_desktop_computer_system.svg");
+        }
+        .Portafolio__web{
+            flex: 2;
+            background: url("https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_1280.jpg");
+        }
+        
+        .Portafolio__mobile{
+            flex: 2;
+            background: url("https://cdn.pixabay.com/photo/2020/07/09/17/46/mobile-phone-5388160_1280.jpg")
+        }
+        .Portafolio__content{
+            font-size: 3.5rem;
+            color: white;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            h3{
+                @include center;
+                height: 100%;
+                width: 100%;
+                transition: .5s ease;
+            }
+        }
+    }
+    a {
+        text-decoration: none;
+    }
+}

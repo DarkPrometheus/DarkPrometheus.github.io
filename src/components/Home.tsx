@@ -1,22 +1,37 @@
 import githubIcon from "./img/github.png";
 import { Link } from "react-router-dom";
+import { useState } from 'react';
 
 export const Home = () => {
+    const [Hide, setHide] = useState("Hide");
+
+    const HideMenu = () => {
+        if (Hide === "Hide") {
+            setHide("NoHide")
+        }
+        else {
+            setHide("Hide")
+        }
+    }
+
     return (
         <div className="Home">
             <div className="Home__container">
                 <div className="Home__links">
-                    <div className="Home__link">
-                        <hr />
-                        <Link to="/Portafolio">Portafolio</Link>
-                    </div>
-                    <div className="Home__link">
-                        <hr />
-                        <Link to="/Blog">Blog</Link>
-                    </div>
-                    <div className="Home__link">
-                        <hr />
-                        <Link to="/SobreMi">Sobre mi</Link>
+                    <img onClick={HideMenu} src="https://www.jbconnect.co/assets/icons/Menu_Burger.png" alt="img" className="MenuBoton" />
+                    <div className={Hide}>
+                        <div className="Home__link">
+                            <hr />
+                            <Link to="/Portafolio">Portafolio</Link>
+                        </div>
+                        <div className="Home__link">
+                            <hr />
+                            <Link to="/Blog">Blog</Link>
+                        </div>
+                        <div className="Home__link">
+                            <hr />
+                            <Link to="/SobreMi">Sobre mi</Link>
+                        </div>
                     </div>
                 </div>
                 <hr />
@@ -30,13 +45,12 @@ export const Home = () => {
                         <div className="Home__contentAbout">
                             <h4 className="Title">Sobre mi</h4>
                             <img src="https://scontent.ftij5-1.fna.fbcdn.net/v/t31.18172-8/19944483_1390934837680437_1433172004419710248_o.jpg?_nc_cat=101&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=nVYXjYbks_wAX-lzAzu&_nc_ht=scontent.ftij5-1.fna&oh=b3f1165bf98e2bd5418a7de19ee5ebec&oe=60C4AAA1" alt="" />
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum culpa corrupti rerum placeat temporibus esse magni dolorum aliquid praesentium omnis vitae, molestias, ducimus tempore itaque consequatur fugiat harum eius eum.</p>
+                            <p>Desde que era apenas un niño me he visto atraido por las computadoas, por las cosas que aparecian en esas enormes cajas con una pantalla. He convivido con una computadora desde que tengo memoria y siempre busque entender como es que funcionaban esas magnificas cajas.</p>
                             <h4 className="Title">Mis habilidades</h4>
                             <ul>
                                 <li>Aplicaciones de escritorio con <b>C#</b></li>
                                 <li><b>SQLite</b></li>
-                                <li>Proyectos usando <b>React</b></li>
-                                <li><b>React native</b></li>
+                                <li><b>React</b></li>
                                 <li><b>Markdown</b></li>
                                 <li><b>Git</b> y <b>github</b></li>
                             </ul>

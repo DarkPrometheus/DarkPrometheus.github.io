@@ -13,7 +13,7 @@ export const TrabajosWebData = [
     {
         id: "GifExpertApp",
         name: "Gif expert app",
-        imgpc: "https://fondosmil.com/fondo/11756.jpg",
+        imgpc: "https://github.com/DarkPrometheus/GifExpertApp/blob/main/ejemplo-programacion.png?raw=true",
         imgmobile: "https://i.pinimg.com/originals/0b/ac/f6/0bacf62a4bd456d02d02c6b8a5c98f67.jpg",
         des: "Pagina web hecha en React la cual a través de una api se conecta a los servicios de Giphy para mostrar gifs relacionados a tu búsqueda",
         github: "https://github.com/DarkPrometheus/GifExpertApp",

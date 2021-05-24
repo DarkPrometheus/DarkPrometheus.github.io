@@ -1,5 +1,5 @@
 import { useParams } from 'react-router';
-import { Header } from './Header';
+import { NavBar } from './NavBar';
 import { TrabajosPortafolio } from "../data/Trabajos"
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -44,7 +44,7 @@ export const Trabajos = () => {
 
     return (
         <div className="Trabajos__container">
-            <Header />
+            <NavBar />
             <div className="Trabajos__main">
                 <div className="Trabajos__opciones">
                     {

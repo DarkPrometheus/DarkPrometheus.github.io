@@ -5,7 +5,13 @@
     flex-direction: column;
 }
 
-@mixin colum {
+@mixin rowCenter {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+@mixin column {
     display: flex;
     flex-direction: column;
 }

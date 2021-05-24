@@ -1,6 +1,6 @@
 import { useParams } from 'react-router';
 import { TrabajosMovilData } from '../data/TrabajosMovilData';
-import { Header } from './Header';
+import { NavBar } from './NavBar';
 import { Link } from 'react-router-dom';
 
 interface RouteParams {
@@ -15,7 +15,7 @@ export const TrabajosMovil = () => {
 
     return (
         <div className="Trabajo__container">
-            <Header />
+            <NavBar />
             <div className="Trabajo__main">
                 {
                     trabajos.map(item => {
