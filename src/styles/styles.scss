@@ -2,8 +2,6 @@
 @import "./base/base";
 @import "./mixins/mixins";
 
-// @import "./components/Trabajos.scss";
-// @import "./components/Trabajo.scss";
 @import "./components/Header.scss";
 
 // Mobile
@@ -20,3 +18,5 @@
 @import "./components/desktop/Portafolio.scss";
 @import "./components/desktop/NavBar.scss";
 @import "./components/desktop/Home.scss";
+@import "./components/desktop/Trabajos.scss";
+@import "./components/desktop/Trabajo.scss";

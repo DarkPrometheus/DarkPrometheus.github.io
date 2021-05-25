@@ -1,6 +1,16 @@
 import githubIcon from "./img/github.png";
 import { Link } from "react-router-dom";
 import { useState } from 'react';
+import { TrabajosPortafolio } from "../data/Trabajos";
+
+interface trabajos {
+    id: string;
+    posicion: number;
+    nombre: string;
+    img: string;
+    des: string;
+    github: string;
+}
 
 export const Home = () => {
     const [Hide, setHide] = useState("Hide");
@@ -12,6 +22,42 @@ export const Home = () => {
         else {
             setHide("Hide")
         }
+    }
+
+    const SetMejoresTrabajos = function (): JSX.Element[] {
+        let bloques: JSX.Element[] = [];
+
+        let Generados: number[] = [];
+
+        for (let i = 0; i < 3; i++) {
+            while (bloques.length != i + 1) {
+                let number: number = Math.floor(Math.random() * (3 - 0)) + 0;
+                let { trabajos, id: idSeccion } = TrabajosPortafolio[number];
+                let max: number = trabajos.length;
+                let number2: number = Math.floor(Math.random() * (max - 0)) + 0;
+                if (!Generados.includes(number * 100 + number2)) {
+                    Generados.push(number * 100 + number2)
+                    let { id: idTrabajo, img, des, nombre } = trabajos[number2];
+
+                    bloques.push(
+                        <>
+                            <Link className="Home__Trabajo" to={
+                                "Portafolio/" + idSeccion + "/" + idTrabajo
+                            }>
+                                <div className={"Trabajo Trabajo" + (i + 1)}>
+                                    <h3>{nombre}</h3>
+                                    <div>
+                                        <img src={img} alt="" />
+                                        <p>{des}</p>
+                                    </div>
+                                </div>
+                            </Link>
+                        </>
+                    )
+                }
+            }
+        }
+        return bloques;
     }
 
     return (
@@ -31,6 +77,10 @@ export const Home = () => {
                         <div className="Home__link">
                             <hr />
                             <Link to="/SobreMi">Sobre mi</Link>
+                        </div>
+                        <div className="Home__link">
+                            <hr />
+                            <Link to="/SobreMi">Contacto</Link>
                         </div>
                     </div>
                 </div>
@@ -59,24 +109,9 @@ export const Home = () => {
                         <div className="Home__content">
                             <h4 className="Title">Algunos de mis trabajos</h4>
                             <div className="Home__contentTrabajos">
-                                <Link className="Home__Trabajo" to="#">
-                                    <div className="Trabajo Trabajo1">
-                                        <img src="https://fondosmil.com/fondo/11756.jpg" alt="" />
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente voluptatem debitis porro expedita dolore doloremque, consequatur itaque deleniti excepturi totam pariatur cum, officia esse fugiat, recusandae accusantium. Enim, veritatis id!</p>
-                                    </div>
-                                </Link>
-                                <Link className="Home__Trabajo" to="#">
-                                    <div className="Trabajo Trabajo2">
-                                        <img src="https://fondosmil.com/fondo/11756.jpg" alt="" />
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente voluptatem debitis porro expedita dolore doloremque, consequatur itaque deleniti excepturi totam pariatur cum, officia esse fugiat, recusandae accusantium. Enim, veritatis id!</p>
-                                    </div>
-                                </Link>
-                                <Link className="Home__Trabajo" to="#">
-                                    <div className="Trabajo Trabajo3">
-                                        <img src="https://fondosmil.com/fondo/11756.jpg" alt="" />
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente voluptatem debitis porro expedita dolore doloremque, consequatur itaque deleniti excepturi totam pariatur cum, officia esse fugiat, recusandae accusantium. Enim, veritatis id!</p>
-                                    </div>
-                                </Link>
+                                {
+                                    SetMejoresTrabajos()
+                                }
                             </div>
                         </div>
                     </div>

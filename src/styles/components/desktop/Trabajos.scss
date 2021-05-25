@@ -1,0 +1,64 @@
+@media (min-width: 1024px){
+    .Trabajos__container{
+        .Trabajos__main{
+            @include row;
+            height: 100%;
+            background-color: goldenrod;
+            hr{
+                margin-top: 2%;
+                height: 2px;
+            }
+            .Trabajos__opciones{
+                @include center;
+                flex: 3;
+                justify-content: flex-start;
+                flex-direction: column;
+                .Trabajos__opcion{
+                    @include center;
+                    height: 3rem;
+                    width: 80%;
+                    align-items: flex-start;
+                    background-color: black;
+                    color: wheat;
+                    margin: .5rem;
+                    padding-left: 1rem;
+                    font-size: 1.3rem;
+                    border-radius: 0 1rem 3rem 0;
+                    border-style: inset;
+                    &:hover{
+                        border-style: outset;
+                    }
+                }
+            }
+            .Trabajos__desc{
+                flex: 7;
+                padding: 1rem;
+                h2{
+
+                }
+                img{
+                    width: 60%;
+                }
+                p{
+                    margin-top: 2rem;
+                }
+                div{
+                    @include row;
+                    margin-top: 3rem;
+                    a{
+
+                    }
+                }
+            }
+        }
+    }
+    .detalles{
+        width: 35%;
+        margin: 1rem;
+        margin-bottom: 0;
+    }
+    
+    .Trabajos__half:last-child{
+        margin-bottom: 2rem;
+    }
+}

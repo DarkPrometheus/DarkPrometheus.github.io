@@ -1,0 +1,117 @@
+@media (min-width: 1024px) {
+    $wtd: 25rem;
+    $hgt: 15rem * $wtd / 25rem;
+
+    .Trabajo__container{
+        .Trabajo__main{
+            @include column;
+            .Trabajo__top{
+                @include row;
+                .Trabajo__imagenes{
+                    @include row;
+                    flex: 3;
+                    .Trabajo__pc{
+                        width: $wtd;
+                        height: $hgt;
+                        img{
+
+                        }
+                        .Trabajo__monitor{
+                            
+                        }
+                        .Trabajo__base{
+                            
+                        }
+                    }
+                    .Trabajo__mobile{
+                        img{
+                            height: $hgt;
+                        }
+                    }
+                }
+                .Trabajo__pcEscritorio{
+                    
+                }
+                .Trabajo__tecnologias{
+                    flex: 7;
+                    h4{
+                        font-size: 2.5rem;
+                    }
+                    ul{
+                        li{
+                            
+                        }
+                    }
+                }
+            }
+            h3{
+                font-size: 3rem;
+            }
+            p{
+                
+            }
+            .Trabajo__botones{
+                @include row;
+                width: 50%;
+                a{
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1800px) {
+    $wtd: 35rem;
+    $hgt: 15rem * $wtd / 25rem;
+
+    .Trabajo__container{
+        .Trabajo__main{
+            .Trabajo__top{
+                .Trabajo__imagenes{
+                    .Trabajo__pc{
+                        width: $wtd;
+                        height: $hgt;
+                        img{
+
+                        }
+                        .Trabajo__monitor{
+                            
+                        }
+                        .Trabajo__base{
+                            
+                        }
+                    }
+                    .Trabajo__mobile{
+                        img{
+                            height: $hgt;
+                        }
+                    }
+                }
+                .Trabajo__pcEscritorio{
+                    
+                }
+                .Trabajo__tecnologias{
+                    h4{
+                        font-size: 4rem;
+                    }
+                    ul{
+                        li{
+                            
+                        }
+                    }
+                }
+            }
+            h3{
+                font-size: 5rem;
+                margin-bottom: 4rem;
+            }
+            p{
+                
+            }
+            .Trabajo__botones{
+                a{
+                }
+            }
+        }
+    }
+}

@@ -37,6 +37,7 @@ export const Trabajos = () => {
     }
     const [Actual, setActual] = useState<trabajos>(trabajos[0])
 
+    console.log(Actual)
     const CambiarTrabajo = (trabajo: number) => {
         console.log(Actual)
         setActual(trabajos[trabajo])

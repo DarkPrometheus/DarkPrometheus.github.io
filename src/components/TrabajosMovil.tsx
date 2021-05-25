@@ -43,7 +43,7 @@ export const TrabajosMovil = () => {
                                 </div>
                                 <p>{item.des}</p>
                                 <div className="Trabajo__botones">
-                                    <Link to="/Portafolio/Movil">Volver</Link>
+                                    <Link to="/Portafolio/Mobile">Volver</Link>
                                     <Link to={item.github} target="_blank">Proyecto en github</Link>
                                 </div>
                             </>

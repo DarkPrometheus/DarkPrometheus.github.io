@@ -6,19 +6,32 @@ $radius: 2rem;
             display: flex;
             flex-direction: column;
             .Home__links{
-                padding: 0 0 1rem 0;
-                @include row;
-                justify-content: space-around;
-                .Home__link{
-                    @include boton;;
-                    flex-direction: row;
-                    border-radius: 0 0 2rem 2rem;
-                    hr{
-                        display: none;
+                align-items: flex-end;
+                img{
+                    display: none;
+                }
+                div{
+                    padding: 1rem;
+                    .Home__link{
+                        flex: 1;
+                        hr{
+                            display: none
+                        }
+                        a{
+                            text-align: center;
+                            width: 100%;
+                            border-bottom: black 3px solid;
+                        }
+                        &:hover a{
+                            border-bottom: white 3px solid;
+                        }
                     }
-                    a{
-                        font-size: 1.2rem;
-                    }
+                }
+                .Hide{
+                    @include row;
+                }
+                .NoHide{
+                    display: block;
                 }
             }
             hr{
@@ -90,16 +103,26 @@ $radius: 2rem;
                                 margin: 1rem;
                                 .Trabajo{
                                     @include center;
-                                    flex-direction: row;
+                                    flex-direction: column;
                                     border: #515151 2px solid;
                                     background-color: #1f1e1d;
-                                    padding: 1.8rem;
-                                    img{
-                                        width: 20%;
+                                    padding: .9rem 1.8rem 1.8rem 1.8rem;
+                                    h3{
+                                        padding-bottom: .9rem;
+                                        color: wheat;
                                     }
-                                    p{
-                                        font-size: 1rem;
-                                        padding: 0 0 0 2rem;
+                                    div{
+                                        @include center;
+                                        width: 100%;
+                                        flex-direction: row;
+                                        justify-content: flex-start;
+                                        img{
+                                            width: 20%;
+                                        }
+                                        p{
+                                            font-size: 1rem;
+                                            padding: 0 0 0 2rem;
+                                        }
                                     }
                                 }
                                 .Trabajo1{
@@ -139,7 +162,7 @@ $radius: 2rem;
             .Home__contentMain{
                 .Home__contentHeader{
                     .Title{
-                        font-size: 2.5rem;
+                        font-size: 2rem;
                     }
                     .Title1{
                         img{
@@ -156,9 +179,9 @@ $radius: 2rem;
                 .Home__contentContainer{
                     .Home__contentAbout{
                         .Title{
-                            font-size: 3.5rem;
+                            font-size: 2.5rem;
                             &:first-child{
-                                font-size: 3.5rem;
+                                font-size: 3rem;
                             }
                         }
                         img{
@@ -178,7 +201,7 @@ $radius: 2rem;
                     }
                     .Home__content{
                         .Title{
-                            font-size: 3.5rem;
+                            font-size: 3rem;
                         }
                         .Home__contentTrabajos{                            
                             .Home__Trabajo{
@@ -187,7 +210,7 @@ $radius: 2rem;
                                         
                                     }
                                     p{
-                                        font-size: 1.5rem;
+                                        font-size: 1.2rem;
                                     }
                                 }
                                 .Trabajo1{

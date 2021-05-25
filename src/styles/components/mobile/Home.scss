@@ -10,7 +10,6 @@ $fontTitle2: 'Lato', sans-serif;
 $fontTitle1: 'Raleway', sans-serif;
 
 @media (min-width: 320px){
-    @include Styles;
     .Home{
         overflow: hidden;
         background-color: black;
@@ -38,7 +37,6 @@ $fontTitle1: 'Raleway', sans-serif;
                 .NoHide{
                     display: block;
                 }
-                
             }
             .Home__contentMain{
                 .Home__contentHeader{

@@ -1,117 +1,98 @@
 @media (min-width: 320px) {
     $wtd: 25rem;
-$hgt: 15rem * $wtd / 25rem;
+    $hgt: 15rem * $wtd / 25rem;
 
-.Trabajo__container{
-    @include fullv;
-    display: flex;
-    flex-direction: column;
-}
-
-.Trabajo__header{
-    flex: 3;
-    background-color: gray;
-}
-
-.Trabajo__main{
-    @include column;
-    align-items: center;
-    background-color: goldenrod;
-    padding-top: 1rem;
-    .Trabajo__top{
-        @include column;
-        width: 100%;
-        .Trabajo__imagenes{
+    .Trabajo__container{
+        @include fullv;
+        display: flex;
+        flex-direction: column;
+        .Trabajo__main{
             @include column;
+            height: 100%;
             align-items: center;
-            margin-bottom: 2rem;
-            .Trabajo__pc{
-                @include center;
-                width: $wtd;
-                height: $hgt;
+            background-color: goldenrod;
+            padding-top: 1rem;
+            .Trabajo__top{
+                @include column;
+                width: 100%;
+                .Trabajo__imagenes{
+                    @include column;
+                    align-items: center;
+                    margin-bottom: 2rem;
+                    .Trabajo__pc{
+                        @include center;
+                        width: $wtd;
+                        height: $hgt;
+                        margin-bottom: 1rem;
+                        img{
+                            padding: 1rem;
+                            width: 100%;
+                        }
+                        .Trabajo__monitor{
+                            width: 80%;
+                            height: 80%;
+                            background-color: black;
+                            border-radius: 1rem;
+                        }
+                        .Trabajo__base{
+                            width: 80px;
+                            height: 0px;
+                    
+                            border-left: 25px solid transparent;
+                            border-right: 25px solid transparent;
+                            border-bottom: 50px solid gray;
+                        }
+                    }
+                    .Trabajo__mobile{
+                        img{
+                            width: 12.5rem;
+                            height: $hgt;
+                            background-color: black;
+                            padding: 1rem;
+                            border-radius: 1rem
+                        }
+                    }
+                }
+                .Trabajo__pcEscritorio{
+                    justify-content: center
+                }
+                .Trabajo__tecnologias{
+                    @include center;
+                    justify-content: flex-start;
+                    h4{
+                        font-size: 3.5rem;
+                    }
+                    ul{
+                        padding: 2rem;
+                        li{
+                            text-align: center;
+                            list-style: none;
+                            padding: .2rem;
+                            font-size: 1.8rem;
+                        }
+                    }
+                }
+            }
+            text-align: center;
+            h3{
                 margin-bottom: 1rem;
-                img{
-                    padding: 1rem;
-                    width: 100%;
-                }
-                .Trabajo__monitor{
+                font-size: 4rem;
+            }
+            p{
+                width: 80%;
+                font-size: 1.5rem;
+            }
+            .Trabajo__botones{
+                margin-top: 2rem;
+                @include botones;
+                @include column;
+                height: fit-content;
+                a{
                     width: 80%;
-                    height: 80%;
-                    background-color: black;
-                    border-radius: 1rem;
-                }
-                .Trabajo__base{
-                    width: 100px;
-                    height: 0px;
-            
-                    border-left: 25px solid transparent;
-                    border-right: 25px solid transparent;
-                    border-bottom: 50px solid gray;
-                }
-            }
-            .Trabajo__mobile{
-                img{
-                    width: 12.5rem;
-                    height: $hgt;
-                    background-color: black;
+                    margin: 1rem;
                     padding: 1rem;
-                    border-radius: 1rem
-                }
-            }
-        }
-        .Trabajo__pcEscritorio{
-            justify-content: center
-        }
-        .Trabajo__tecnologias{
-            @include center;
-            justify-content: flex-start;
-            h4{
-                font-size: 3.5rem;
-            }
-            ul{
-                padding: 2rem;
-                li{
-                    text-align: center;
-                    list-style: none;
-                    padding: .2rem;
-                    font-size: 1.8rem;
                 }
             }
         }
     }
-    text-align: center;
-    h3{
-        margin-bottom: 1rem;
-        font-size: 4rem;
-    }
-    p{
-        width: 80%;
-        font-size: 1.5rem;
-    }
-    .Trabajo__botones{
-        margin-top: 2rem;
-        @include botones;
-        @include column;
-        height: fit-content;
-        a{
-            width: 80%;
-            margin: 1rem;
-            padding: 1rem;
-        }
-    }
-}
-
-.Trabajo__img{
-    @include center;
-    flex: 1;
-    margin: 3rem;
-    position: relative;
-    img:last-child{
-        position: absolute;
-        width: 92%;
-        height: 45%;
-        top: 6rem;
-        border-radius: 10px;
-    }
-}
 }
