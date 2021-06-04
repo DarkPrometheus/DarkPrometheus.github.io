@@ -108,6 +108,7 @@ $radius: 2rem;
                                     background-color: #1f1e1d;
                                     padding: .9rem 1.8rem 1.8rem 1.8rem;
                                     h3{
+                                        font-size: 1.5rem;
                                         padding-bottom: .9rem;
                                         color: wheat;
                                     }
@@ -118,11 +119,15 @@ $radius: 2rem;
                                         justify-content: flex-start;
                                         img{
                                             width: 20%;
+                                            height: 7rem;
                                         }
                                         p{
-                                            font-size: 1rem;
+                                            font-size: 1.2rem;
                                             padding: 0 0 0 2rem;
                                         }
+                                    }
+                                    &:hover{
+                                        
                                     }
                                 }
                                 .Trabajo1{
