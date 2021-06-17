@@ -94,7 +94,7 @@ export const Home = () => {
                     <div className="Home__contentContainer">
                         <div className="Home__contentAbout">
                             <h4 className="Title">Sobre mi</h4>
-                            <img src="https://scontent.ftij5-1.fna.fbcdn.net/v/t31.18172-8/19944483_1390934837680437_1433172004419710248_o.jpg?_nc_cat=101&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=nVYXjYbks_wAX-lzAzu&_nc_ht=scontent.ftij5-1.fna&oh=b3f1165bf98e2bd5418a7de19ee5ebec&oe=60C4AAA1" alt="" />
+                            <img src="https://scontent.ftij5-1.fna.fbcdn.net/v/t31.18172-8/19944483_1390934837680437_1433172004419710248_o.jpg?_nc_cat=101&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=U9CAAzz19HoAX-_ZZiI&_nc_ht=scontent.ftij5-1.fna&oh=57f92c88f089015e6e0704a9fb3277e7&oe=60F02C21" alt="" />
                             <p>Desde que era apenas un niño me he visto atraido por las computadoas, por las cosas que aparecian en esas enormes cajas con una pantalla. He convivido con una computadora desde que tengo memoria y siempre busque entender como es que funcionaban esas magnificas cajas.</p>
                             <h4 className="Title">Mis habilidades</h4>
                             <ul>
