@@ -6,7 +6,7 @@ export const TrabajosPortafolio = [
                 id: "JuegoDeTrivias",
                 posicion: 0,
                 nombre: "Juego de trivias",
-                img: "https://fondosmil.com/fondo/11756.jpg",
+                img: "https://us.123rf.com/450wm/outchill/outchill2012/outchill201203940/161621857-in-progress-text-on-red-grungy-vintage-rectangle-stamp-.jpg?ver=6",
                 des: "Juego de preguntas por categorias con inicio de sesion de usuarios y tabla de las mejores puntuaciones",
                 github: "https://github.com/DarkPrometheus/Trivias"
             },
@@ -48,7 +48,7 @@ export const TrabajosPortafolio = [
                 id: "Calculadora",
                 posicion: 0,
                 nombre: "Calculadora IOS",
-                img: "https://fondosmil.com/fondo/11756.jpg",
+                img: "https://us.123rf.com/450wm/outchill/outchill2012/outchill201203940/161621857-in-progress-text-on-red-grungy-vintage-rectangle-stamp-.jpg?ver=6",
                 des: "Clon de la calculadora de IOS",
                 github: "https://github.com/DarkPrometheus",
             },
