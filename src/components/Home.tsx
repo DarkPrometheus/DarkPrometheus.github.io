@@ -1,7 +1,8 @@
-import githubIcon from "./img/github.png";
+import githubIcon from "../img/github.png";
 import { Link } from "react-router-dom";
 import { useState } from 'react';
 import { TrabajosPortafolio } from "../data/Trabajos";
+import Photo from "../img/photo.jpg"
 
 interface trabajos {
     id: string;
@@ -70,10 +71,10 @@ export const Home = () => {
                             <hr />
                             <Link to="/Portafolio">Portafolio</Link>
                         </div>
-                        <div className="Home__link">
+                        {/* <div className="Home__link">
                             <hr />
                             <Link to="/Blog">Blog</Link>
-                        </div>
+                        </div> */}
                         <div className="Home__link">
                             <hr />
                             <Link to="/SobreMi">Sobre mi</Link>
@@ -87,14 +88,14 @@ export const Home = () => {
                 <hr />
                 <div className="Home__contentMain">
                     <div className="Home__contentHeader">
-                        <h4 className="Title1 Title"><img src={githubIcon} alt="" /> Dark prometheus</h4>
+                        <a href="https://github.com/DarkPrometheus" className="Title1 Title"><img src={githubIcon} alt="" /> Dark prometheus</a>
                         <h4 className="Title2 Title">Frias Aviña Emmanuel</h4>
                     </div>
                     <hr />
                     <div className="Home__contentContainer">
                         <div className="Home__contentAbout">
                             <h4 className="Title">Sobre mi</h4>
-                            <img src="https://scontent.ftij5-1.fna.fbcdn.net/v/t31.18172-8/19944483_1390934837680437_1433172004419710248_o.jpg?_nc_cat=101&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=U9CAAzz19HoAX-_ZZiI&_nc_ht=scontent.ftij5-1.fna&oh=57f92c88f089015e6e0704a9fb3277e7&oe=60F02C21" alt="" />
+                            <img src={Photo} alt="" />
                             <p>Desde que era apenas un niño me he visto atraido por las computadoas, por las cosas que aparecian en esas enormes cajas con una pantalla. He convivido con una computadora desde que tengo memoria y siempre busque entender como es que funcionaban esas magnificas cajas.</p>
                             <h4 className="Title">Mis habilidades</h4>
                             <ul>

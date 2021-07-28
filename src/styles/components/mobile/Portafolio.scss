@@ -6,16 +6,16 @@
         background-color: rebeccapurple;
         .Portafolio__desktop{
             flex: 2;
-            background: url("https://upload.wikimedia.org/wikipedia/commons/5/59/Basic_desktop_computer_system.svg");
+            background: url("../../../img/desktop.png");
         }
         .Portafolio__web{
             flex: 2;
-            background: url("https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_1280.jpg");
+            background: url("../../../img/web.jpg");
         }
         
         .Portafolio__mobile{
             flex: 2;
-            background: url("https://cdn.pixabay.com/photo/2020/07/09/17/46/mobile-phone-5388160_1280.jpg")
+            background: url("../../../img/mobile.jpg")
         }
         .Portafolio__content{
             font-size: 3.5rem;

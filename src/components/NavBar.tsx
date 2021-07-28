@@ -19,7 +19,7 @@ export const NavBar = () => {
             <ul className={Hide}>
                 <Link to="/Home">Home</Link>
                 <Link to="/Portafolio">Portafolio</Link>
-                <Link to="/Blog">Blog</Link>
+                {/* <Link to="/Blog">Blog</Link> */}
                 <Link to="/SobreMi">Sobre mi</Link>
                 <Link to="/SobreMi">Contacto</Link>
             </ul>
