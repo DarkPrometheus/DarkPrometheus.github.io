@@ -65,7 +65,7 @@ export const Home = () => {
         <div className="Home">
             <div className="Home__container">
                 <div className="Home__links">
-                    <img onClick={HideMenu} src="https://www.jbconnect.co/assets/icons/Menu_Burger.png" alt="img" className="MenuBoton" />
+                    <img onClick={HideMenu} src="https://img.icons8.com/material-outlined/24/ffffff/menu--v1.png" alt="img" className="MenuBoton" />
                     <div className={Hide}>
                         <div className="Home__link">
                             <hr />
@@ -81,14 +81,14 @@ export const Home = () => {
                         </div>
                         <div className="Home__link">
                             <hr />
-                            <Link to="/SobreMi">Contacto</Link>
+                            <Link to="/Contacto">Contacto</Link>
                         </div>
                     </div>
                 </div>
                 <hr />
                 <div className="Home__contentMain">
                     <div className="Home__contentHeader">
-                        <a href="https://github.com/DarkPrometheus" className="Title1 Title"><img src={githubIcon} alt="" /> Dark prometheus</a>
+                        <a target="_blank" rel="noreferrer" href="https://github.com/DarkPrometheus" className="Title1 Title"><img src={githubIcon} alt="" /> Dark prometheus</a>
                         <h4 className="Title2 Title">Frias Aviña Emmanuel</h4>
                     </div>
                     <hr />

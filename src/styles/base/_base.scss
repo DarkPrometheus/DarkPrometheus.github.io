@@ -1,53 +1,35 @@
+/* Configuracion basica para SASS */
 *{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
     height: 100vh;
     width: 100%;
-    // overflow: hidden;
 }
 
-.MenuBoton{
-    margin: 1rem 1rem 1rem 0;
-    width: 3rem;
-    height: 3rem;
+#root{
+    height: 100vh;
+    .Routers{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
 }
-.Hide{
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.noDisplay{
     display: none;
 }
-
-@mixin Styles {
-    .title{
-        font-size: 5rem;
-        color: white;
-        font-family: 'Potta One', cursive;
-    }
-
-    .link{
-        text-decoration: none;
-        color: $color;
-    }
-
-    .Display{
-        display: block;
-    }
-
-    .NoDisplay{
-        display: none;
-    }
-
-    .mr-1{
-        margin-right: 1rem;
-    }
-
-    .shadow{
-        &:hover{
-            color: darken($color: white, $amount: .1);
-            text-shadow: 1px 1px;
-        }
-    }
+.displayBlock{
+    display: block;
+}
+.displayFlex{
+    display: Flex;
 }

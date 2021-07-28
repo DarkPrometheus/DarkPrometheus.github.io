@@ -5,6 +5,7 @@ import { TrabajosWeb } from './TrabajosWeb';
 import { Trabajos } from './Trabajos';
 import { TrabajosEscritorio } from './TrabajosEscritorio';
 import { TrabajosMovil } from './TrabajosMovil';
+import { Contacto } from './Contacto';
 
 export const AppRouter = () => {
     return (
@@ -12,6 +13,7 @@ export const AppRouter = () => {
             <div className="Routers">
                 <Switch>
                     <Route path="/Home" component={Home} />
+                    <Route path="/Contacto" component={Contacto} />
                     <Route path="/Portafolio/Desktop/:trabajo" component={TrabajosEscritorio} />
                     <Route path="/Portafolio/Web/:trabajo" component={TrabajosWeb} />
                     <Route path="/Portafolio/Mobile/:trabajo" component={TrabajosMovil} />

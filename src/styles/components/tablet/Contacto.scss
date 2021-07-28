@@ -1,0 +1,27 @@
+@media (min-width: 480px){
+    .Contacto__container{
+        h1{
+            font-size: 3.5rem;
+        }
+        form{
+            width: 70%;
+            div{
+                p{
+                    font-size: 1.3rem;
+                }
+                input{
+                    font-size: 1.15rem;
+                }
+                textarea{
+                    font-size: 1.15rem;                    
+                }
+                .btn{
+                    font-size: 1.3rem;                    
+                }
+                &:last-child{
+
+                }
+            }
+        }
+    }
+}

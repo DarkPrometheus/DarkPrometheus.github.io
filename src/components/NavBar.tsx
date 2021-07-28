@@ -15,13 +15,13 @@ export const NavBar = () => {
 
     return (
         <header className="NavBar">
-            <img onClick={HideMenu} src="https://www.jbconnect.co/assets/icons/Menu_Burger.png" alt="img" className="MenuBoton" />
+            <img onClick={HideMenu} src="https://img.icons8.com/material-outlined/24/ffffff/menu--v1.png" alt="img" className="MenuBoton" />
             <ul className={Hide}>
                 <Link to="/Home">Home</Link>
                 <Link to="/Portafolio">Portafolio</Link>
                 {/* <Link to="/Blog">Blog</Link> */}
                 <Link to="/SobreMi">Sobre mi</Link>
-                <Link to="/SobreMi">Contacto</Link>
+                <Link to="/Contacto">Contacto</Link>
             </ul>
         </header>
     )

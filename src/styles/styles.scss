@@ -10,11 +10,14 @@
 @import "./components/mobile/Portafolio.scss";
 @import "./components/mobile/Trabajos.scss";
 @import "./components/mobile/Trabajo.scss";
+@import "./components/mobile/Contacto.scss";
 
 // Tablet
 @import "./components/tablet/Home.scss";
+@import "./components/tablet/Contacto.scss";
 
 // Desktop
+@import "./components/desktop/Contacto.scss";
 @import "./components/desktop/Portafolio.scss";
 @import "./components/desktop/NavBar.scss";
 @import "./components/desktop/Home.scss";

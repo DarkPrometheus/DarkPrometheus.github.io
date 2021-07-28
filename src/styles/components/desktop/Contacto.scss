@@ -1,0 +1,59 @@
+@media (min-width: 1024px){
+    .Contacto__container{
+        h1{
+            font-size: 3rem;
+        }
+        form{
+            width: 40%;
+            div{
+                p{
+                    font-size: 1.2rem;
+                }
+                input{
+                    font-size: 1.2rem;
+                }
+                textarea{
+                    font-size: 1rem;                    
+                }
+                .btn{
+                    font-size: 1.2rem;                    
+                }
+                &:last-child{
+
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1800px){
+    .Contacto__container{
+        h1{
+            font-size: 3.2rem;
+        }
+        form{
+            width: 30%;
+            div{
+                p{
+                    font-size: 1.3rem;
+                }
+                input{
+                    font-size: 1.3rem;
+                }
+                textarea{
+                    font-size: 1.1rem;                    
+                }
+                .btn{
+                    font-size: 1.3rem;  
+                    &:hover{
+                        cursor: pointer;
+                        background-color: darken($color: wheat, $amount: 10%);
+                    }
+                }
+                &:last-child{
+
+                }
+            }
+        }
+    }
+}

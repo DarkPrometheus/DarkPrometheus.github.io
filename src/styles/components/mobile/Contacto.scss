@@ -1,0 +1,45 @@
+@media (min-width: 320px){
+    .Contacto__container{
+        @include center;
+        height: 100%;
+        flex: 1;
+        background-color: black;
+        justify-content: flex-start;
+        padding-top: 2rem;
+        h1{
+            color: white;
+            padding-bottom: 2rem;
+            font-size: 2.5rem;
+        }
+        form{
+            border: 2px solid wheat;
+            padding: 1rem;
+            border-radius: 1rem;
+            width: 90%;
+            div{
+                padding-bottom: 1rem;
+                p{
+                    color: white;
+                    padding-bottom: .3rem;
+                }
+                input{
+                    @include formContentBase;
+                }
+                textarea{
+                    @include formContentBase;
+                }
+                .btn{
+                    border: 0;
+                    background-color: wheat;
+                    color: black;
+                    border-radius: 1rem;
+                    font-weight: bold;
+                    font-size: 1rem;
+                }
+                &:last-child{
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+}
