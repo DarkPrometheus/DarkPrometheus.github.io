@@ -20,7 +20,7 @@ export const NavBar = () => {
                 <Link to="/Home">Home</Link>
                 <Link to="/Portafolio">Portafolio</Link>
                 {/* <Link to="/Blog">Blog</Link> */}
-                <Link to="/SobreMi">Sobre mi</Link>
+                {/* <Link to="/SobreMi">Sobre mi</Link> */}
                 <Link to="/Contacto">Contacto</Link>
             </ul>
         </header>

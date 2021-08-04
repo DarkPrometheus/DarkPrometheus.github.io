@@ -75,10 +75,10 @@ export const Home = () => {
                             <hr />
                             <Link to="/Blog">Blog</Link>
                         </div> */}
-                        <div className="Home__link">
+                        {/* <div className="Home__link">
                             <hr />
                             <Link to="/SobreMi">Sobre mi</Link>
-                        </div>
+                        </div> */}
                         <div className="Home__link">
                             <hr />
                             <Link to="/Contacto">Contacto</Link>
