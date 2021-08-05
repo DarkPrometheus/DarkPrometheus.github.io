@@ -21,6 +21,7 @@ export const Trabajos = () => {
     const { seccion } = useParams<RouteParams>();
     let trabajos: trabajos[];
 
+    // Obtiene la informacion de Trabajos.js
     switch (seccion) {
         case "Web":
             trabajos = TrabajosPortafolio[0].trabajos;
@@ -37,9 +38,7 @@ export const Trabajos = () => {
     }
     const [Actual, setActual] = useState<trabajos>(trabajos[0])
 
-    console.log(Actual)
     const CambiarTrabajo = (trabajo: number) => {
-        console.log(Actual)
         setActual(trabajos[trabajo])
     }
 
@@ -61,7 +60,7 @@ export const Trabajos = () => {
                     <p>{Actual.des}</p>
                     <div>
                         <Link to={seccion + "/" + Actual.id}>Mas detalles</Link>
-                        <a href={Actual.github}>Proyecto en github</a>
+                        <a href={Actual.github} rel="noreferrer" target="_blank">Proyecto en github</a>
                     </div>
                 </div>
             </div>

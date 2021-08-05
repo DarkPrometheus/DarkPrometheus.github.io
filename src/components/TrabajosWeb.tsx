@@ -9,7 +9,6 @@ interface RouteParams {
 
 export const TrabajosWeb = () => {
     const { trabajo } = useParams<RouteParams>();
-    console.log(trabajo);
 
     let trabajos = TrabajosWebData;
 

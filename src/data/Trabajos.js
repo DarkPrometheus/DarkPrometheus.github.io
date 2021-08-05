@@ -8,7 +8,7 @@ export const TrabajosPortafolio = [
                 id: "JuegoDeTrivias",
                 posicion: 0,
                 nombre: "Juego de trivias",
-                img: inProgress,
+                img: "https://github.com/DarkPrometheus/Trivias/raw/main/img-pc.png",
                 des: "Juego de preguntas por categorias con inicio de sesion de usuarios y tabla de las mejores puntuaciones",
                 github: "https://github.com/DarkPrometheus/Trivias"
             },
@@ -16,9 +16,17 @@ export const TrabajosPortafolio = [
                 id: "GifExpertApp",
                 posicion: 1,
                 nombre: "Gif expert app",
-                img: "https://github.com/DarkPrometheus/GifExpertApp/blob/main/ejemplo-programacion.png?raw=true",
+                img: "https://github.com/DarkPrometheus/GifExpertApp/raw/main/img-pc.png",
                 des: "Pagina web hecha en React la cual a través de una api se conecta a los servicios de Giphy para mostrar gifs relacionados a tu búsqueda",
                 github: "https://github.com/DarkPrometheus/GifExpertApp"
+            },
+            {
+                id: "CursoPracticoJavaScript",
+                posicion: 2,
+                nombre: "Curso práctico de JavaScript",
+                img: "https://github.com/DarkPrometheus/curso-platzi-js/raw/master/img-pc.png",
+                des: "Curso para reforzar habilidades basicas de JavaScript",
+                github: "https://github.com/DarkPrometheus/curso-platzi-js"
             }
         ]
     },
