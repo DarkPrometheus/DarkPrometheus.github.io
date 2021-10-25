@@ -47,7 +47,12 @@ export const TrabajosWeb = () => {
                                 <p>{item.des}</p>
                                 <div className="Trabajo__botones">
                                     <Link to="/Portafolio/Web">Volver</Link>
-                                    <Link to={item.github} target="_blank">Proyecto en github</Link>
+                                    <a href={item.github} rel="noreferrer" target="_blank">Proyecto en github</a>
+                                    {
+                                        console.log("item.github")
+                                    }{
+                                        console.log(item.github)
+                                    }
                                 </div>
                             </>
                         }
