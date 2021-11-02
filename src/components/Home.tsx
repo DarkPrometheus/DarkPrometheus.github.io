@@ -96,7 +96,7 @@ export const Home = () => {
                         <div className="Home__contentAbout">
                             <h4 className="Title">Sobre mi</h4>
                             <img src={Photo} alt="" />
-                            <p>Desde que era apenas un niño me he visto atraido por las computadoas, por las cosas que aparecian en esas enormes cajas con una pantalla. He convivido con una computadora desde que tengo memoria y siempre busque entender como es que funcionaban esas magnificas cajas.</p>
+                            <p>Desde que era apenas un niño me he visto atraido por las computadoras, por las cosas que aparecian en esas enormes cajas con una pantalla. He convivido con una computadora desde que tengo memoria y siempre busque entender como es que funcionaban esas magnificas cajas.</p>
                             <h4 className="Title">Mis habilidades</h4>
                             <ul>
                                 <li>Aplicaciones de escritorio con <b>C#</b></li>
