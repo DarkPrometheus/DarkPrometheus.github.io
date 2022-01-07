@@ -1,0 +1,7 @@
+@media (min-width: $sizeScreen){
+    .Home__container{
+        @include column;
+        background-color: $color01;
+        color: white;
+    }
+}

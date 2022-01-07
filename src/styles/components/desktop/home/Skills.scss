@@ -1,0 +1,30 @@
+@media (min-width: $sizeScreen) {
+    .Skills__container {
+        @include column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 5rem 0 0 0;
+        h3 {
+            font-size: $subtitleSize;
+        }
+        .Container__content {
+            @include conainer;
+            .content__seccion {
+                h1 {
+                    font-size: 1.5rem;
+                }
+                .seccion__tecnologiasContainer {
+                    @include row;
+                    margin: 2rem;
+                    .tecnologia {
+                        background-color: #2e2b2b;
+                        margin: 1rem;
+                        width: 7.5rem;
+                        height: 10rem;
+                        
+                    }
+                }
+            }
+        }
+    }
+}

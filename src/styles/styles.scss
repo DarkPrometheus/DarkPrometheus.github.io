@@ -1,25 +1,28 @@
-@import "./base/settings";
-@import "./base/base";
-@import "./mixins/mixins";
+@import './base/settings';
+@import './base/base';
+@import './mixins/mixins';
 
-@import "./components/Header.scss";
+@import './components/Header.scss';
 
 // Mobile
-@import "./components/mobile/NavBar.scss";
-@import "./components/mobile/Home.scss";
-@import "./components/mobile/Portafolio.scss";
-@import "./components/mobile/Trabajos.scss";
-@import "./components/mobile/Trabajo.scss";
-@import "./components/mobile/Contacto.scss";
+@import './components/mobile/NavBar.scss';
+@import './components/mobile/Home.scss';
+@import './components/mobile/Portafolio.scss';
+@import './components/mobile/Trabajos.scss';
+@import './components/mobile/Trabajo.scss';
+@import './components/mobile/Contacto.scss';
 
 // Tablet
-@import "./components/tablet/Home.scss";
-@import "./components/tablet/Contacto.scss";
+@import './components/tablet/Home.scss';
+@import './components/tablet/Contacto.scss';
 
 // Desktop
-@import "./components/desktop/Contacto.scss";
-@import "./components/desktop/Portafolio.scss";
-@import "./components/desktop/NavBar.scss";
-@import "./components/desktop/Home.scss";
-@import "./components/desktop/Trabajos.scss";
-@import "./components/desktop/Trabajo.scss";
+@import './components/desktop/home/Home.scss';
+@import './components/desktop/home/Presentacion.scss';
+@import './components/desktop/home/About.scss';
+@import './components/desktop/home/Skills.scss';
+@import './components/desktop/Contacto.scss';
+@import './components/desktop/Portafolio.scss';
+@import './components/desktop/NavBar.scss';
+@import './components/desktop/Trabajos.scss';
+@import './components/desktop/Trabajo.scss';

@@ -1,11 +1,12 @@
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';
-import { Home } from './Home';
+import { Home } from './home/Home';
 import { Portafolio } from './Portafolio';
 import { TrabajosWeb } from './TrabajosWeb';
 import { Trabajos } from './Trabajos';
 import { TrabajosEscritorio } from './TrabajosEscritorio';
 import { TrabajosMovil } from './TrabajosMovil';
 import { Contacto } from './Contacto';
+import 'animate.css';
 
 export const AppRouter = () => {
     return (
