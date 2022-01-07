@@ -1,5 +1,7 @@
 # Emmanuel Frias Aviña
 
+## English
+
 Welcome to my personal website, here is where I currently have my portfolio.
 
 If you are interested in my resume, you can find it [here](https://emmanuelfrias.com/Resume/)
