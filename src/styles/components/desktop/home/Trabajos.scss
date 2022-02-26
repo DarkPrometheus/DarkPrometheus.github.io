@@ -1,0 +1,337 @@
+.Trabajos__container {
+    @include column;
+    @include conainer;
+    h3 {
+        font-size: $subtitleSize;
+    }
+    .Trabajos__content {
+        @include content;
+        .Trabajo__container {
+            width: 100%;
+            height: auto;
+            h1 {
+                text-align: center;
+                margin-bottom: 2rem;
+                font-size: 3rem;
+                margin-top: 5rem;
+                font-family: 'Source Sans Pro', sans-serif;
+            }
+            img {
+                max-width: 100%;
+            }
+            div {
+                @include center;
+                img {
+                    max-width: 100%;
+                    height: 30rem;
+                }
+            }
+            .descripcion {
+                margin-top: 2.5rem;
+                background-color: #121212;
+                padding: 2rem 3rem;
+                border-radius: 2rem;
+                p {
+                    margin-top: 0.5rem;
+                    width: 100%;
+                    text-align: justify;
+                    font-size: 1.2rem;
+                    font-style: italic;
+
+                    /* font-family: 'Noto Sans', sans-serif; */
+                    font-family: 'Open Sans', sans-serif;
+                    /* font-family: 'Rubik', sans-serif; */
+                    /* font-family: 'Source Sans Pro', sans-serif; */
+                }
+                svg {
+                    width: 2rem;
+                    height: 2rem;
+                    margin: 1rem 0;
+                    &:first-child {
+                        margin-right: 100%;
+                    }
+                    &:last-child {
+                        margin-left: 100%;
+                    }
+                }
+            }
+            h2 {
+                margin-top: 2rem;
+                font-size: 2.3rem;
+                font-family: 'Source Sans Pro', sans-serif;
+            }
+            ul {
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                margin: 0.5rem 0 0 0;
+                li {
+                    @include center;
+                    margin: 0.5rem;
+                    padding: 1rem;
+                    width: 15rem;
+                    background-color: #2e2b2b;
+                    border-radius: 0.5rem;
+                    font-size: 1.2rem;
+
+                    grid-column: span 2;
+
+                    /* Dealing with 2 orphan items */
+                    &:last-child:nth-child(3n - 1) {
+                        grid-column-end: -2;
+                    }
+                    &:nth-last-child(2):nth-child(3n + 1) {
+                        grid-column-end: 4;
+                    }
+                    /* Dealing with single orphan */
+                    &:last-child:nth-child(3n - 2) {
+                        grid-column-end: 5;
+                    }
+
+                    box-shadow: inset 0 0 0 0 #54b3d6;
+                    color: #54b3d6;
+                    transition: color 0.3s ease-in-out,
+                        box-shadow 0.3s ease-in-out;
+                    &:hover {
+                        box-shadow: inset 15rem 0 0 0 #54b3d6;
+                        color: white;
+                    }
+                }
+            }
+            iframe {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                height: 30rem;
+                width: 100%;
+            }
+            .links {
+                @include row;
+                margin-top: 1rem;
+                width: 100%;
+                justify-content: space-around;
+                a {
+                    @include center;
+                    padding: 0.3rem;
+                    font-size: 1.3rem;
+                    svg {
+                        margin-bottom: 0.8rem;
+                        transform: scale(1.3);
+                    }
+                }
+            }
+            &:first-child {
+                h1 {
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $size3) {
+    .Trabajos__container {
+        h3 {
+            font-size: $title2;
+        }
+        .Trabajos__content {
+            width: 70%;
+            padding: 1rem;
+            .Trabajo__container {
+                h1 {
+                    font-size: $subTitle2;
+                    margin: 2rem 0 1rem 0;
+                }
+                div {
+                    img {
+                        width: 100%;
+                        height: 26rem;
+                    }
+                }
+                .descripcion {
+                    margin: 1rem 0 0 0;
+                    padding: 0 1.5rem;
+                    p {
+                        font-size: $text2;
+                        margin: 0;
+                    }
+                    svg {
+                        transform: scale(1.1);
+                        margin: 1rem 2rem;
+                        &:first-child {
+                        }
+                        &:last-child {
+                        }
+                    }
+                }
+                h2 {
+                    font-size: $subTitle2;
+                    text-align: center;
+                }
+                ul {
+                    align-items: center;
+                    justify-content: center;
+                    li {
+                        width: 15rem;
+                        font-size: 1.2rem;
+                        &:last-child:nth-child(3n - 1) {
+                        }
+                        &:nth-last-child(2):nth-child(3n + 1) {
+                        }
+                        /* Dealing with single orphan */
+                        &:last-child:nth-child(3n - 2) {
+                        }
+
+                        &:hover {
+                        }
+                    }
+                }
+                iframe {
+                }
+                .links {
+                    margin-bottom: 1rem;
+                    a {
+                        font-size: 1.2rem;
+                        svg {
+                            transform: scale(1.1);
+                            margin-bottom: 0.5rem;
+                        }
+                    }
+                }
+                &:first-child {
+                    h1 {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $size2) {
+    .Trabajos__container {
+        h3 {
+            font-size: $title2;
+        }
+        .Trabajos__content {
+            width: 80%;
+            padding: 1rem;
+            .Trabajo__container {
+                h1 {
+                    font-size: $subTitle2;
+                    margin: 2rem 0 1rem 0;
+                }
+                div {
+                    img {
+                        width: 100%;
+                        height: 20rem;
+                    }
+                }
+                .descripcion {
+                    margin: 1rem 0 0 0;
+                    padding: 0 1.5rem;
+                    p {
+                        font-size: $text2;
+                        margin: 0;
+                    }
+                    svg {
+                        transform: scale(1.1);
+                        margin: 1rem 2rem;
+                        &:first-child {
+                        }
+                        &:last-child {
+                        }
+                    }
+                }
+                h2 {
+                    font-size: $subTitle2;
+                    text-align: center;
+                }
+                ul {
+                    grid-template-columns: repeat(2, 1fr);
+                    align-items: center;
+                    justify-content: center;
+                    li {
+                        width: 15rem;
+                        font-size: 1.2rem;
+                        &:last-child:nth-child(3n - 1) {
+                        }
+                        &:nth-last-child(2):nth-child(3n + 1) {
+                        }
+                        /* Dealing with single orphan */
+                        &:last-child:nth-child(3n - 2) {
+                        }
+
+                        &:hover {
+                        }
+                    }
+                }
+                iframe {
+                }
+                .links {
+                    margin-bottom: 1rem;
+                    a {
+                        font-size: 1.2rem;
+                        svg {
+                            transform: scale(1.1);
+                            margin-bottom: 0.5rem;
+                        }
+                    }
+                }
+                &:first-child {
+                    h1 {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $size1) {
+    .Trabajos__container {
+        h3 {
+            font-size: $title1;
+        }
+        .Trabajos__content {
+            .Trabajo__container {
+                h1 {
+                    font-size: $subTitle;
+                }
+                div {
+                    img {
+                        height: 9rem;
+                    }
+                }
+                .descripcion {
+                    p {
+                        font-size: 0.8rem;
+                    }
+                    svg {
+                        transform: scale(0.8);
+                        margin: 0.5rem 1rem;
+                    }
+                }
+                h2 {
+                    font-size: $subTitle;
+                }
+                ul {
+                    display: flex;
+                    grid-template-columns: none;
+                    flex-direction: column;
+                    li {
+                        font-size: 0.8rem;
+                    }
+                }
+                iframe {
+                    height: auto;
+                }
+                .links {
+                    a {
+                        svg {
+                            transform: scale(0.8);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

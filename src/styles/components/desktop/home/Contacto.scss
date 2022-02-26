@@ -1,0 +1,212 @@
+.Contacto__container {
+    @include center;
+    @include conainer;
+    h1 {
+        font-size: $subtitleSize;
+    }
+    .Contacto__content {
+        @include content;
+        @include column;
+        margin-bottom: 5rem;
+        h2 {
+            @include center;
+            width: 100%;
+            font-size: 2.2rem;
+            margin-bottom: 1.2rem;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        .Redes__container {
+            @include row;
+            form {
+                width: 50%;
+                div {
+                    @include center;
+                    width: 100%;
+                    border: 1px black;
+                    input {
+                        width: 80%;
+                        margin: 0.5rem;
+                        background-color: #141414;
+                        font-size: 1.2rem;
+                        padding: 0.5rem;
+                        border: none;
+                        border-radius: 0.5rem;
+                        color: snow;
+                    }
+                    textarea {
+                        width: 80%;
+                        margin: 0.5rem;
+                        background-color: #141414;
+                        font-size: 1.2rem;
+                        padding: 0.5rem;
+                        border: none;
+                        border-radius: 0.5rem;
+                        color: snow;
+                    }
+                    .btn {
+                        background-color: #b9996e;
+                        color: black;
+                        font-size: 1.2rem;
+                    }
+                    &:last-child {
+                    }
+                }
+            }
+            .redes {
+                @include row;
+                @include center;
+                align-items: flex-start;
+                width: 25%;
+                margin-left: 20%;
+                user-select: none;
+                svg {
+                    margin-top: 2rem;
+                    filter: invert(52%) sepia(6%) saturate(141%)
+                        hue-rotate(131deg) brightness(89%) contrast(91%);
+                }
+                a,
+                div {
+                    @include column;
+                    width: 50%;
+                    align-items: center;
+                    cursor: pointer;
+                    svg {
+                    }
+                    p {
+                        margin-top: 0.5rem;
+                        font-size: 1.2rem;
+                        margin-left: 0.5rem;
+                        transition: all 1s ease;
+                    }
+                    .Linkedin {
+                        transition: all 0.5s ease;
+                        &:hover {
+                            filter: invert(27%) sepia(85%) saturate(1602%)
+                                hue-rotate(192deg) brightness(91%) contrast(94%);
+                        }
+                    }
+                    .Github {
+                        transition: all 0.5s ease;
+                        &:hover {
+                            filter: none;
+                        }
+                    }
+                    .Mail {
+                        transition: all 0.5s ease;
+                        &:hover {
+                            filter: invert(16%) sepia(7%) saturate(5924%)
+                                hue-rotate(178deg) brightness(98%) contrast(93%);
+                        }
+                    }
+                }
+                div {
+                    &:active + .copy {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $size2) {
+    .Contacto__container {
+        h1 {
+            font-size: $title2;
+        }
+        .Contacto__content {
+            @include column;
+            width: 80%;
+            padding: 1rem;
+            h2 {
+                text-align: center;
+                font-size: $subTitle2;
+                margin-bottom: 1rem;
+            }
+            .Redes__container {
+                @include column;
+                form {
+                    width: 100%;
+                    div {
+                        input,
+                        textarea,
+                        .btn {
+                            font-size: $text2;
+                        }
+                    }
+                }
+                .redes {
+                    @include center;
+                    width: 100%;
+                    margin: 0 0 1rem 0;
+                    svg {
+                    }
+                    a,
+                    div {
+                        svg {
+                            transform: scale(1.2);
+                        }
+                        p {
+                            font-size: $text2;
+                            margin: 1rem 0 0 0;
+                        }
+                        &:hover > p {
+                        }
+                        .Linkedin {
+                            &:hover {
+                            }
+                        }
+                        .Github {
+                            &:hover {
+                            }
+                        }
+                        .Mail {
+                            &:hover {
+                            }
+                        }
+                    }
+                    div {
+                        &:active + .copy {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $size1) {
+    .Contacto__container {
+        h1 {
+            font-size: $title1;
+        }
+        .Contacto__content {
+            h2 {
+                font-size: $subTitle;
+            }
+            .Redes__container {
+                form {
+                    div {
+                        input,
+                        textarea,
+                        .btn {
+                            font-size: 0.75rem;
+                        }
+                    }
+                }
+                .redes {
+                    a,
+                    div {
+                        svg {
+                            transform: scale(0.8);
+                        }
+                        p {
+                            margin-top: 0;
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -2,92 +2,92 @@
     $wtd: 25rem;
     $hgt: 15rem * $wtd / 25rem;
 
-    .Trabajo__container{
+    .Trabajo__container {
         @include fullv;
         display: flex;
         flex-direction: column;
-        .Trabajo__main{
+        .Trabajo__main {
             @include column;
             height: 100%;
             align-items: center;
             background-color: goldenrod;
             padding-top: 1rem;
-            .Trabajo__top{
+            .Trabajo__top {
                 @include column;
                 width: 100%;
-                .Trabajo__imagenes{
+                .Trabajo__imagenes {
                     @include column;
                     align-items: center;
                     margin-bottom: 2rem;
-                    .Trabajo__pc{
+                    .Trabajo__pc {
                         @include center;
                         width: $wtd;
                         height: $hgt;
                         margin-bottom: 1rem;
-                        img{
+                        img {
                             padding: 1rem;
                             width: 100%;
                         }
-                        .Trabajo__monitor{
+                        .Trabajo__monitor {
                             width: 80%;
                             height: 80%;
                             background-color: black;
                             border-radius: 1rem;
                         }
-                        .Trabajo__base{
+                        .Trabajo__base {
                             width: 80px;
                             height: 0px;
-                    
+
                             border-left: 25px solid transparent;
                             border-right: 25px solid transparent;
                             border-bottom: 50px solid gray;
                         }
                     }
-                    .Trabajo__mobile{
-                        img{
+                    .Trabajo__mobile {
+                        img {
                             width: 12.5rem;
                             height: $hgt;
                             background-color: black;
                             padding: 1rem;
-                            border-radius: 1rem
+                            border-radius: 1rem;
                         }
                     }
                 }
-                .Trabajo__pcEscritorio{
-                    justify-content: center
+                .Trabajo__pcEscritorio {
+                    justify-content: center;
                 }
-                .Trabajo__tecnologias{
+                .Trabajo__tecnologias {
                     @include center;
                     justify-content: flex-start;
-                    h4{
+                    h4 {
                         font-size: 3.5rem;
                     }
-                    ul{
+                    ul {
                         padding: 2rem;
-                        li{
+                        li {
                             text-align: center;
                             list-style: none;
-                            padding: .2rem;
+                            padding: 0.2rem;
                             font-size: 1.8rem;
                         }
                     }
                 }
             }
             text-align: center;
-            h3{
+            h3 {
                 margin-bottom: 1rem;
                 font-size: 4rem;
             }
-            p{
+            p {
                 width: 80%;
                 font-size: 1.5rem;
             }
-            .Trabajo__botones{
+            .Trabajo__botones {
                 margin-top: 2rem;
                 @include botones;
                 @include column;
                 height: fit-content;
-                a{
+                a {
                     width: 80%;
                     margin: 1rem;
                     padding: 1rem;

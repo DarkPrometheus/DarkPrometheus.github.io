@@ -1,42 +1,51 @@
 import React from 'react';
-import img1 from '../img/Screenshot Lector de facutas con datos.png';
-import img2 from '../img/Cotizador.png';
+import GithubSVG from '../sgv/GithubSVG';
+import WebSVG from '../sgv/WebSVG';
+import pagina from '../img/PaginaPrincipal.png';
 
-export const Trabajos = () => {
+export const Proyectos = () => {
     let trabajos = [
         {
-            title: 'Lector de facturas',
-            img: img1,
+            title: 'GifExpertApp',
+            img: 'https://github.com/DarkPrometheus/GifExpertApp/raw/main/img-pc.png',
             desc: [
-                'Este programa escrito en C#, .Net Framework lee de una carpeta archivos de texto con informacion de facturas las cuales su informacion esta dividida por el caracter "|". Estas facturas tienen en el nombre un numero, el cual es usado para buscar la factura que se quiere leer, una vez se ingresa el numero de la factura y se da a buscar, el programa lee esa factura y un archivo .xlsx para obtener los datos necesarios y desplegarlos en una tabla donde al darle clic a un campo, se copia su contenido al porta papeles.',
+                'Pagina web hecha en React la cual a través de una api se conecta a los servicios de Giphy para mostrar gifs relacionados a tu búsqueda',
             ],
-            tecnologias: ['.NET Framework', 'C#'],
-            video: 'https://www.youtube.com/embed/ELg77rSwE1E',
+            tecnologias: ['ReactJS', 'HTML5', 'CSS3', 'JavaScript'],
+            github: 'https://github.com/DarkPrometheus/GifExpertApp',
+            pagina: 'https://emmanuelfrias.com/GifExpertApp/',
         },
         {
-            title: 'Generador de cotizaciones',
-            img: img2,
+            title: 'Proyecto JavaScript',
+            img: 'https://github.com/DarkPrometheus/curso-platzi-js/raw/master/img-pc.png',
             desc: [
-                'Este programa escrito en C#, .Net Framework tiene el objetivo de generar cotizaciones con los datos de productos de bases de datos .dbf que contiene la informacion de los productos, clientes, etc.',
-                /* 'Para entrar al programa se debe iniciar sesion, una vez dentro, en el campo de "No. de cliente" se ingresa el numero de cliente a quien se le va a cotizar y se da enter, lo cual carga los datos de ese cliente si existe, posteriormente en la tabla del medio en el campo de "Codigo de producto", se ingresa el codigo del producto que se va a cotizar, al dar enter se cargan los datos del producto y se calculan las celdas de "Subtotal", "Profit" y "Margin", al cambiar la cantidad, el precio de costo o precio de venta se vuelven a calcular los campos. El programa tambien puede guardar la cotizacion actual dando en el boton "Guardar" de la parte inferior, asi cuando se vuelva a abrir el programa, se cargara la ultima cotizacion gurdada. Se puede elegir entre las cotizaciones guardadas en la parte superior de la seccion "Ordenes". Ademas en la parte inferior hay un boton para convertir los precios a dolares y se muestra el total de la cotizacion.',
-                'Los usuarios tambien pueden generar un reporte de la base de datos el cual es generado en un pdf. Tambien, si el usuario es un usuario administrador, se le mostrara en la barra de herramientas superior una seccion para administrar los usuarios.' */
+                'Esta pagina es parte del JS Challenge de platzi, en donde se realizo una pagina web con JavaScript de varios temas para reforzar conocimientos basicos de JavaScript',
             ],
-            tecnologias: ['.NET Framework', 'C#', ' LINQ', '.dfb'],
-            video: '',
+            tecnologias: ['ReactJS', 'HTML5', 'SASS', 'JavaScript'],
+            github: 'https://github.com/DarkPrometheus/curso-platzi-js',
+            pagina: 'https://emmanuelfrias.com/curso-platzi-js/#/',
+        },
+        {
+            title: 'Mi pagina web',
+            img: pagina,
+            desc: [
+                'Esta pagina misma pagina fue creada por mi desde cero con mis conocimiento de ReactJs y SASS',
+            ],
+            tecnologias: ['ReactJS', 'HTML5', 'SASS', 'JavaScript'],
+            github: 'https://github.com/DarkPrometheus/DarkPrometheus.github.io',
+            pagina: 'https://emmanuelfrias.com',
         },
     ];
 
     return (
         <div className="Trabajos__container">
-            <h3>Mis trabajos</h3>
+            <h3>Mis proyectos</h3>
             <div className="Trabajos__content">
                 {trabajos.map((trabajo) => {
                     return (
                         <div className="Trabajo__container">
                             <h1>{trabajo.title}</h1>
-                            <div>
-                                <img src={trabajo.img} alt="imagen" />
-                            </div>
+                            <img src={trabajo.img} alt="imagen" />
                             <div className="descripcion">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -114,14 +123,24 @@ export const Trabajos = () => {
                                     return <li>{tecnologia}</li>;
                                 })}
                             </ul>
-                            {trabajo.video !== '' ? (
-                                <iframe
-                                    title="video"
-                                    src={trabajo.video}
-                                ></iframe>
-                            ) : (
-                                <></>
-                            )}
+                            <div className="links">
+                                <a
+                                    href={trabajo.github}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <GithubSVG />
+                                    Github
+                                </a>
+                                <a
+                                    href={trabajo.pagina}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <WebSVG />
+                                    Demo
+                                </a>
+                            </div>
                         </div>
                     );
                 })}

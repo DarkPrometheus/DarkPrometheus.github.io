@@ -1,15 +1,46 @@
-@media (min-width: $sizeScreen) {
+.About__container {
+    @include column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5rem 0 0 0;
+    h3 {
+        font-size: $subtitleSize;
+    }
+    p {
+        @include content;
+        font-size: 1.3rem;
+        text-align: justify;
+    }
+}
+
+@media (max-width: $size3) {
     .About__container {
-        @include column;
-        height: 30rem;
-        justify-content: flex-start;
-        align-items: center;
-        padding: 5rem 0 0 0;
         h3 {
-            font-size: $subtitleSize;
+            font-size: $title2;
         }
         p {
-            @include conainer;
+            width: 70%;
+            font-size: $text2;
+            text-align: justify;
+        }
+    }
+}
+
+@media (max-width: $size2) {
+    .About__container {
+        p {
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width: $size1) {
+    .About__container {
+        h3 {
+            font-size: $title1;
+        }
+        p {
+            font-size: $text1;
         }
     }
 }

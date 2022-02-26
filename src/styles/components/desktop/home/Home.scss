@@ -1,7 +1,20 @@
-@media (min-width: $sizeScreen){
-    .Home__container{
-        @include column;
-        background-color: $color01;
-        color: white;
+#root {
+    .Routers {
+        .Home__container {
+            @include column;
+            background-color: $color01;
+            color: white;
+        }
+        h3 {
+            font-family: 'Noto Sans', sans-serif;
+        }
+    }
+}
+
+@media (min-width: $size1) {
+    .Home__container {
+    }
+    h3 {
+        font-family: 'Noto Sans', sans-serif;
     }
 }

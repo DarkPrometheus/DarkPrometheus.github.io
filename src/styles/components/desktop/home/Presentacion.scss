@@ -1,121 +1,192 @@
-@media (min-width: $sizeScreen) {
+.Presentacion__container {
+    @include center;
+    padding: 5rem 0 0 0;
+    width: 100%;
+    height: 100vh;
+    background: #000 url('../../../../components/img/stars.png') repeat top
+        center;
+    h1 {
+        font-size: $subtitleSize;
+        animation-duration: 1s;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .redes {
+        @include row;
+        margin: 2rem 0 0 0;
+        a {
+            @include center;
+            margin: 1rem;
+            padding: 1rem;
+            background-color: $color02;
+            border-radius: 1rem;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-top: 2px solid #262626;
+                border-bottom: 2px solid #262626;
+                transform: scaleY(2);
+                opacity: 0;
+                transition: 0.3s;
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                top: 2px;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #262626;
+                transform: scale(0);
+                opacity: 0;
+                transition: 0.3s;
+                z-index: -1;
+            }
+            &:hover {
+                color: #fff;
+                &:before {
+                    transform: scaleY(1);
+                    opacity: 1;
+                }
+                &:after {
+                    transform: scaleY(1);
+                    opacity: 1;
+                }
+            }
+            p {
+                padding: 0.5rem 0 0 0;
+                font-size: 1.2rem;
+            }
+            &:hover {
+            }
+        }
+        .linkedin {
+            svg {
+                filter: invert(27%) sepia(85%) saturate(1602%)
+                    hue-rotate(192deg) brightness(91%) contrast(94%);
+            }
+        }
+    }
+    .menu {
+        position: relative;
+        display: block;
+        text-transform: uppercase;
+        margin: 2rem 0;
+        padding: 1rem 2rem;
+        text-decoration: none;
+        color: #262626;
+        font-family: sans-serif;
+        font-size: 2rem;
+        font-weight: 600;
+        transition: 0.5s;
+        z-index: 1;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-top: 2px solid #262626;
+            border-bottom: 2px solid #262626;
+            transform: scaleY(2);
+            opacity: 0;
+            transition: 0.3s;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #262626;
+            transform: scale(0);
+            opacity: 0;
+            transition: 0.3s;
+            z-index: -1;
+        }
+        &:hover {
+            color: #fff;
+            &:before {
+                transform: scaleY(1);
+                opacity: 1;
+            }
+            &:after {
+                transform: scaleY(1);
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@media (max-width: $size3) {
     .Presentacion__container {
-        @include center;
-        padding: 5rem 0 0 0;
-        width: 100%;
-        height: 100vh;
         h1 {
-            font-size: $subtitleSize;
-            animation-duration: 1s;
+            font-size: $title3;
+            text-align: center;
         }
         h2 {
-            font-size: 1.5rem;
+            font-size: $subTitle3;
+            text-align: center;
+            margin-top: 2rem;
         }
         .redes {
-            @include row;
-            margin: 2rem 0 0 0;
-            div {
-                @include center;
-                margin: 1rem;
-                padding: 1rem;
-                background-color: $color02;
-                border-radius: 1rem;
-                p {
-                    padding: 0.5rem 0 0 0;
-                    font-size: 1.2rem;
-                }
+            a {
+                padding: 1.5rem;
+            }
+            svg {
+                transform: scale(1.1);
+                margin-bottom: 0.5rem;
             }
         }
-        .menu {
-            display: flex;
-            justify-content: center;
-            margin-top: 3rem;
-            list-style: none;
-            li {
-                margin-right: 70px;
-                a {
-                    position: relative;
-                    font-size: 2.5rem;
+    }
+}
 
-                    padding: 1rem;
-                    &:hover .border-top,
-                    &:hover .border-bottom {
-                        transform: scaleX(1);
-                    }
-
-                    &:hover .border-left,
-                    &:hover .border-right {
-                        transform: scaleY(1);
-                    }
-
-                    &:hover .border-right {
-                        transition-delay: var(--transition-delay);
-                    }
-
-                    &:hover .border-bottom {
-                        transition-delay: calc(var(--transition-delay) * 2);
-                    }
-
-                    &:hover .border-left {
-                        transition-delay: calc(var(--transition-delay) * 3);
-                    }
-                }
+@media (max-width: $size2) {
+    .Presentacion__container {
+        h1 {
+            font-size: $title2;
+            text-align: center;
+        }
+        h2 {
+            font-size: $subTitle2;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .redes {
+            a {
+                padding: 1.5rem;
             }
-            .border {
-                position: absolute;
-                left: 0;
-                background: #f5deb3;
-                transition: transform var(--transition-duration) ease-in-out;
-            }
-            .border-top,
-            .border-bottom {
-                width: 100%;
-                height: 1px;
-                transform: scaleX(0);
-            }
-            .border-left,
-            .border-right {
-                width: 1px;
-                height: 100%;
-                transform: scaleY(0);
-            }
-
-            .border-top,
-            .border-left,
-            .border-right {
-                top: 0;
-            }
-
-            .border-bottom {
-                bottom: 0;
-                transform-origin: bottom right;
-            }
-
-            .border-top {
-                transform-origin: top left;
-            }
-
-            .border-left {
-                transform-origin: bottom left;
-            }
-
-            .border-right {
-                left: auto;
-                right: 0;
-                transform-origin: top right;
+            svg {
+                transform: scale(1.1);
+                margin-bottom: 0.5rem;
             }
         }
-        .menu[data-animation='diagonal'] .border-left {
-            transform-origin: top left;
-        }
+    }
+}
 
-        .menu[data-animation='diagonal'] .border-right,
-        .menu[data-animation='diagonal'] .border-bottom {
-            transform-origin: bottom right;
+@media (max-width: $size1) {
+    .Presentacion__container {
+        h1 {
+            font-size: $title1;
         }
-
-        .menu[data-animation='diagonal'] a:hover [class^='border'] {
-            transition-delay: 0s;
+        h2 {
+            font-size: $subTitle;
+        }
+        .redes {
+            a {
+                padding: 0.5rem;
+            }
+            svg {
+                transform: scale(0.8);
+            }
         }
     }
 }

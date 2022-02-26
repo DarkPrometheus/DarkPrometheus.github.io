@@ -5,23 +5,17 @@
 @import './components/Header.scss';
 
 // Mobile
-@import './components/mobile/NavBar.scss';
-@import './components/mobile/Home.scss';
-@import './components/mobile/Portafolio.scss';
-@import './components/mobile/Trabajos.scss';
-@import './components/mobile/Trabajo.scss';
-@import './components/mobile/Contacto.scss';
 
 // Tablet
-@import './components/tablet/Home.scss';
-@import './components/tablet/Contacto.scss';
 
 // Desktop
 @import './components/desktop/home/Home.scss';
 @import './components/desktop/home/Presentacion.scss';
 @import './components/desktop/home/About.scss';
 @import './components/desktop/home/Skills.scss';
-@import './components/desktop/Contacto.scss';
+@import './components/desktop/home/Trabajos.scss';
+@import './components/desktop/home/Contacto.scss';
+
 @import './components/desktop/Portafolio.scss';
 @import './components/desktop/NavBar.scss';
 @import './components/desktop/Trabajos.scss';

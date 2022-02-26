@@ -1,28 +1,101 @@
-@media (min-width: $sizeScreen) {
+.Skills__container {
+    @include column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5rem 0 0 0;
+    h3 {
+        font-size: $subtitleSize;
+    }
+    .Container__content {
+        @include content;
+        .content__seccion {
+            h1 {
+                font-size: 1.7rem;
+                font-family: 'Source Sans Pro', sans-serif;
+            }
+            .seccion__tecnologiasContainer {
+                @include row;
+                margin: 2rem;
+                flex-wrap: wrap;
+                justify-content: center;
+                .tecnologia {
+                    @include center;
+                    background-color: #2e2b2b;
+                    margin: 1rem;
+                    width: 7.5rem;
+                    height: 10rem;
+                    border-radius: 0.5rem;
+                    p {
+                        margin-top: 0.5rem;
+                        text-align: center;
+                        font-family: 'Source Sans Pro', sans-serif;
+                    }
+                    svg {
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $size3) {
     .Skills__container {
-        @include column;
-        justify-content: flex-start;
-        align-items: center;
-        padding: 5rem 0 0 0;
         h3 {
-            font-size: $subtitleSize;
+            font-size: $title2;
         }
         .Container__content {
-            @include conainer;
+            width: 70%;
+            padding: 1rem;
             .content__seccion {
+                @include center;
                 h1 {
-                    font-size: 1.5rem;
+                    margin-top: 1rem;
+                    font-size: $subTitle2;
+                    text-align: center;
                 }
                 .seccion__tecnologiasContainer {
-                    @include row;
-                    margin: 2rem;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
                     .tecnologia {
-                        background-color: #2e2b2b;
-                        margin: 1rem;
-                        width: 7.5rem;
-                        height: 10rem;
-                        
+                        width: 15rem;
+                        p {
+                            font-size: 1.5rem;
+                        }
+                        svg {
+                        }
                     }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $size2) {
+    .Skills__container {
+        .Container__content {
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width: $size1) {
+    .Skills__container {
+        h3 {
+            font-size: $title1;
+        }
+        .Container__content {
+            width: 80%;
+            padding: 1rem;
+            .content__seccion {
+                @include center;
+                h1 {
+                    margin-top: 1rem;
+                    font-size: $subTitle;
+                    text-align: center;
+                }
+                .seccion__tecnologiasContainer {
+                    @include column;
                 }
             }
         }
