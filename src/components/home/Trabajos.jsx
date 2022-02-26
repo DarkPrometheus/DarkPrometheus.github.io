@@ -8,7 +8,7 @@ export const Trabajos = () => {
             title: 'Lector de facturas',
             img: img1,
             desc: [
-                'Este programa escrito en C#, .Net Framework lee de una carpeta archivos de texto con informacion de facturas las cuales su informacion esta dividida por el caracter "|". Estas facturas tienen en el nombre un numero, el cual es usado para buscar la factura que se quiere leer, una vez se ingresa el numero de la factura y se da a buscar, el programa lee esa factura y un archivo .xlsx para obtener los datos necesarios y desplegarlos en una tabla donde al darle clic a un campo, se copia su contenido al porta papeles.',
+                'Este programa escrito en C#, .Net Framework lee de una carpeta archivos de texto con información de facturas las cuales su información esta dividida por el carácter "|". Estas facturas tienen en el nombre un número, el cual es usado para buscar la factura que se quiere leer, una vez se ingresa el número de la factura y se da a buscar, el programa lee esa factura y un archivo .xlsx para obtener los datos necesarios y desplegarlos en una tabla donde al darle clic a un campo, se copia su contenido al portapapeles.',
             ],
             tecnologias: ['.NET Framework', 'C#'],
             video: 'https://www.youtube.com/embed/ELg77rSwE1E',
@@ -17,7 +17,7 @@ export const Trabajos = () => {
             title: 'Generador de cotizaciones',
             img: img2,
             desc: [
-                'Este programa escrito en C#, .Net Framework tiene el objetivo de generar cotizaciones con los datos de productos de bases de datos .dbf que contiene la informacion de los productos, clientes, etc.',
+                'Este programa escrito en C#, .Net Framework tiene el objetivo de generar cotizaciones con los datos de productos de bases de datos .dbf que contiene la información de los productos, clientes, etc.',
                 /* 'Para entrar al programa se debe iniciar sesion, una vez dentro, en el campo de "No. de cliente" se ingresa el numero de cliente a quien se le va a cotizar y se da enter, lo cual carga los datos de ese cliente si existe, posteriormente en la tabla del medio en el campo de "Codigo de producto", se ingresa el codigo del producto que se va a cotizar, al dar enter se cargan los datos del producto y se calculan las celdas de "Subtotal", "Profit" y "Margin", al cambiar la cantidad, el precio de costo o precio de venta se vuelven a calcular los campos. El programa tambien puede guardar la cotizacion actual dando en el boton "Guardar" de la parte inferior, asi cuando se vuelva a abrir el programa, se cargara la ultima cotizacion gurdada. Se puede elegir entre las cotizaciones guardadas en la parte superior de la seccion "Ordenes". Ademas en la parte inferior hay un boton para convertir los precios a dolares y se muestra el total de la cotizacion.',
                 'Los usuarios tambien pueden generar un reporte de la base de datos el cual es generado en un pdf. Tambien, si el usuario es un usuario administrador, se le mostrara en la barra de herramientas superior una seccion para administrar los usuarios.' */
             ],

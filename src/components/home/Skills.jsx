@@ -19,7 +19,7 @@ import VisualStudioSVG from '../sgv/VisualStudioSVG';
 export const Skills = () => {
     var skillsDatos = [
         {
-            title: 'Lenguajes de programacion principales',
+            title: 'Lenguajes de programación principales',
             datos: ['JavaScript', 'C#'],
             url: ['https://img.icons8.com/color/48/000000/javascript--v1.png'],
             sgv: [<JsSVG />, <CSharpSVG />],
@@ -35,7 +35,7 @@ export const Skills = () => {
             sgv: [<SqlSVG />, <SQLiteSVG />],
         },
         {
-            title: 'Tecnologias',
+            title: 'Tecnologías',
             datos: ['.NET Framework', 'Redux'],
             sgv: [<VisualStudioSVG />, <ReduxSVG />],
         },

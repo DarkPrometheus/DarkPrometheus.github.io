@@ -9,7 +9,7 @@ export const Proyectos = () => {
             title: 'GifExpertApp',
             img: 'https://github.com/DarkPrometheus/GifExpertApp/raw/main/img-pc.png',
             desc: [
-                'Pagina web hecha en React la cual a través de una api se conecta a los servicios de Giphy para mostrar gifs relacionados a tu búsqueda',
+                'Página web hecha en React la cual a través de una API se conecta a los servicios de Giphy para mostrar GIF relacionados con tu búsqueda',
             ],
             tecnologias: ['ReactJS', 'HTML5', 'CSS3', 'JavaScript'],
             github: 'https://github.com/DarkPrometheus/GifExpertApp',
@@ -19,7 +19,7 @@ export const Proyectos = () => {
             title: 'Proyecto JavaScript',
             img: 'https://github.com/DarkPrometheus/curso-platzi-js/raw/master/img-pc.png',
             desc: [
-                'Esta pagina es parte del JS Challenge de platzi, en donde se realizo una pagina web con JavaScript de varios temas para reforzar conocimientos basicos de JavaScript',
+                'Esta página es parte del JS Challenge de platzi, en donde se realizó una página web con JavaScript de varios temas para reforzar conocimientos básicos de JavaScript',
             ],
             tecnologias: ['ReactJS', 'HTML5', 'SASS', 'JavaScript'],
             github: 'https://github.com/DarkPrometheus/curso-platzi-js',
@@ -29,7 +29,7 @@ export const Proyectos = () => {
             title: 'Mi pagina web',
             img: pagina,
             desc: [
-                'Esta pagina misma pagina fue creada por mi desde cero con mis conocimiento de ReactJs y SASS',
+                'Esta página misma página fue creada por mí desde cero con mis conocimientos de ReactJs y SASS',
             ],
             tecnologias: ['ReactJS', 'HTML5', 'SASS', 'JavaScript'],
             github: 'https://github.com/DarkPrometheus/DarkPrometheus.github.io',
@@ -117,7 +117,7 @@ export const Proyectos = () => {
                                     </g>
                                 </svg>
                             </div>
-                            <h2>Tecnologias</h2>
+                            <h2>Tecnologías</h2>
                             <ul>
                                 {trabajo.tecnologias.map((tecnologia) => {
                                     return <li>{tecnologia}</li>;

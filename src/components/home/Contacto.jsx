@@ -1,6 +1,5 @@
 import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
-import mail from '../img/mail.png';
 import GithubSVG from '../sgv/GithubSVG';
 import LinkedinSVG from '../sgv/LinkedinSVG';
 import MailSVG from '../sgv/MailSVG';
@@ -17,14 +16,14 @@ export const Contacto = () => {
                 'user_RCMYO9tr6e8RPfhPb2bAT'
             )
             .then(
-                (result) => {
+                () => {
                     Swal.fire({
                         icon: 'success',
                         title: '¡Correo enviado!',
                         text: 'Respondere tu correo lo antes posible',
                     });
                 },
-                (error) => {
+                () => {
                     Swal.fire({
                         icon: 'error',
                         title: 'Hubo un error :(',
