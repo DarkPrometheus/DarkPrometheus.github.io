@@ -6,15 +6,21 @@
             color: white;
         }
         h3 {
+            text-align: center;
             font-family: 'Noto Sans', sans-serif;
         }
     }
 }
 
 @media (min-width: $size1) {
-    .Home__container {
-    }
     h3 {
         font-family: 'Noto Sans', sans-serif;
     }
 }
+
+@media (min-width: 600px) {
+    h3 {
+        font-family: 'Noto Sans', sans-serif;
+    }
+}
+

@@ -62,7 +62,7 @@ export const Contacto = () => {
                                 <input
                                     type="text"
                                     required
-                                    placeholder="¿Para que me necesitas?"
+                                    placeholder="¿Como te puedo ayudar?"
                                     name="subject"
                                 />
                             </div>

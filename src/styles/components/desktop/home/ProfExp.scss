@@ -1,0 +1,27 @@
+.Trabajos__container{
+    .Trabajos__content{
+        .ProfExp__container{
+            h1{
+                text-align: center;
+                font-size: 2.2rem;
+            }
+            .descripcion{
+                background-color: #121212;
+                margin: 2rem 0 4rem 0;
+                padding: 1rem;
+                border-radius: 1rem;
+                p{
+                    &:first-child{
+                        font-size: 1.2rem;
+                        text-align: justify;
+                    }
+                    &:last-child{
+                        margin-top: 1rem;
+                        width: 100%;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+}

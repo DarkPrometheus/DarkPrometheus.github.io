@@ -11,6 +11,7 @@ import NotionSVG from '../sgv/NotionSVG';
 import ReactSVG from '../sgv/ReactSVG';
 import ReduxSVG from '../sgv/ReduxSVG';
 import SassSVG from '../sgv/SassSVG';
+import Blazor from '../sgv/Blazor';
 import SQLiteSVG from '../sgv/SQLiteSVG';
 import SqlSVG from '../sgv/SqlSVG';
 import VisualCodeSVG from '../sgv/VisualCodeSVG';
@@ -26,12 +27,12 @@ export const Skills = () => {
         },
         {
             title: 'Frontend / Web',
-            datos: ['ReactJS', 'HTML 5', 'CSS 3', 'SASS'],
-            sgv: [<ReactSVG />, <HMTLSVG />, <CssSVG />, <SassSVG />],
+            datos: ['ReactJS', 'HTML 5', 'CSS 3', 'SASS', 'Blazor'],
+            sgv: [<ReactSVG />, <HMTLSVG />, <CssSVG />, <SassSVG />, <Blazor />],
         },
         {
             title: 'Bases de datos',
-            datos: ['SQL', 'SQLite'],
+            datos: ['SQL Server', 'SQLite'],
             sgv: [<SqlSVG />, <SQLiteSVG />],
         },
         {
@@ -41,7 +42,7 @@ export const Skills = () => {
         },
         {
             title: 'Mis herramientas',
-            datos: ['Visual Studio Code', 'Visual Studio'],
+            datos: ['VS Code', 'Visual Studio'],
             sgv: [<VisualCodeSVG />, <VisualStudioSVG />],
         },
         {

@@ -28,7 +28,7 @@ export const Trabajos = () => {
 
     return (
         <div className="Trabajos__container">
-            <h3>Mis trabajos</h3>
+            <h3>Mis trabajos Freelance</h3>
             <div className="Trabajos__content">
                 {trabajos.map((trabajo) => {
                     return (
